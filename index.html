@@ -132,14 +132,79 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <section data-route="exercise1">
+
+              <!-- QCM 1 -->
+
               <paper-material elevation="1">
-
-                <h2>Exercice 1 - QCM</h2>
-                <p class="paper-font-subhead">Question bla bla</p>
-                <my-qcm value="{{myAnswers.qcm1}}"></my-qcm>
-
+                <h2>QCM 1</h2>
+                <pre>
+                  <code>
+var a = 1;
+var b = 2;
+b++;
+alert(a + b);
+                  </code>
+                </pre>
+                <p class="paper-font-subhead">Quelle valeur sera affichée dans l'alerte modale ?</p>
+                <my-qcm value="{{myAnswers.qcm1}}" items="[4,3,13,12]"></my-qcm>
               </paper-material>
-            </section>
+
+            <!-- QCM 2 -->
+
+            <paper-material elevation="1">
+              <h2>QCM 2</h2>
+              <pre>
+                <code>
+var a = 1;
+var b = 2;
+if (a == 1) {
+  alert('1er cas');
+} else if (a == 1 && b == 2) {
+  alert('2eme cas');
+} else {
+  alert('3eme cas');
+}
+                </code>
+              </pre>
+              <p class="paper-font-subhead">Quelle valeur sera affichée dans l'alerte modale ?</p>
+              <my-qcm value="{{myAnswers.qcm2}}" items='[{"name":"1","text":"1er cas"},{"name":"2","text":"2eme cas"},{"name":"3","text":"3eme cas"},{"name":"0","text":"aucune"}]'></my-qcm>
+            </paper-material>
+
+            <!-- QCM 3 -->
+
+            <paper-material elevation="1">
+              <h2>QCM 3</h2>
+              <pre>
+                <code>
+for(var i = 0; XXX; i++) {
+  alert('boom!');
+}
+                </code>
+              </pre>
+              <p class="paper-font-subhead">Que faut-il écrire à la place de `XXX` pour que l'alerte modale <b>boom!</b> s'affiche 3 fois ?</p>
+              <my-qcm value="{{myAnswers.qcm3}}" items='[{"name":"0","text":"i <= 3"},{"name":"1","text":"i < 3"},{"name":"2","text":"i == 2"},{"name":"3","text":"i > 2"}]'></my-qcm>
+            </paper-material>
+
+            <!-- QCM 4 -->
+
+            <paper-material elevation="1">
+              <h2>QCM 4</h2>
+              <pre>
+                <code>
+function somme(a, b) {
+  return a + b;
+}
+function soustraction(a, b) {
+  return a - b;
+}
+alert(soustraction(somme(1, 2), 4));
+                </code>
+              </pre>
+              <p class="paper-font-subhead">Quelle valeur sera affichée dans l'alerte modale ?</p>
+              <my-qcm value="{{myAnswers.qcm4}}" items='[3,1,0,-1]'></my-qcm>
+            </paper-material>
+
+          </section>
 
             <section data-route="exercise2">
               <paper-material elevation="1">

@@ -33,11 +33,15 @@
           }
         },
         ready: function() {
-          this.items = [
+          var sampleItems = [
             { name: "small", text: "Small" },
             { name: "medium", text: "Medium" },
             { name: "large", text: "Large" }
           ];
+          //console.log('this.items', typeof this.items, this.items);
+          this.items = !this.items ? sampleItems : this.items.map(function(item){
+            return typeof item != 'object' ? { name: item, text: item } : item;
+          });
         }
       });
     })();
