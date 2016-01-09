@@ -93,6 +93,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="exercise"></iron-icon>
             <span>Exercice 2</span>
           </a>
+          <a data-route="exercise3" href="{{baseUrl}}ex3">
+            <iron-icon icon="exercise"></iron-icon>
+            <span>Exercice 3</span>
+          </a>
           <a data-route="submit" href="{{baseUrl}}submit">
             <iron-icon icon="submit"></iron-icon>
             <span>Terminer</span>
@@ -206,16 +210,29 @@ alert(soustraction(somme(1, 2), 4));
 
             </section>
 
+            <!-- EXERCICE 2 (CODE) -->
+
             <section data-route="exercise2">
               <paper-material elevation="1">
-
                 <h2>Exercice 2 - Code</h2>
                 <zero-md file="./ex2.md">
                   <!-- Remember to pass in empty container of class="md-html". -->
                   <div class="md-html"></div>
                 </zero-md>
                 <my-code value="{{myAnswers.code1}}"></my-code>
+              </paper-material>
+            </section>
 
+            <!-- EXERCICE 3 (CODE) -->
+
+            <section data-route="exercise3">
+              <paper-material elevation="1">
+                <h2>Exercice 3 - Code</h2>
+                <zero-md file="./ex3.md">
+                  <!-- Remember to pass in empty container of class="md-html". -->
+                  <div class="md-html"></div>
+                </zero-md>
+                <my-code value="{{myAnswers.code2}}"></my-code>
               </paper-material>
             </section>
 

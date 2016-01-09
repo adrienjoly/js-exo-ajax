@@ -84,7 +84,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     this.myAnswers = {
       //qcm1: "large",
       //code: "function(){\n\n}",
-      code1: "document.getElementById('formulaire').onsubmit = function (evt) {\n  /* saisissez votre code entre les accolades */\n};"
+      code1: [
+        "document.getElementById('formulaire').onsubmit = function (evt) {",
+        "  /* saisissez votre code entre les accolades */",
+        "};"
+      ].join('\n'),
+      code2: [
+        "var results = document.getElementsByClassName('res');",
+        "for (var i=0; i<results.length; ++i) {",
+        "  var element = results[i];",
+        "}"
+      ].join('\n')
     }
   };
 
