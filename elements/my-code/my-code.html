@@ -4,12 +4,13 @@
 <dom-module id="my-code">
   <template>
     <style include="shared-styles"></style>
-    <style>
-      :host {
-        display: block;
+    <style is="custom-style">
+      :root {
+        --paper-input-container-input-color: blue;
+        --paper-input-font-family: monospace; /* does not work... */
       }
     </style>
-    <paper-textarea value="{{value::input}}"></paper-textarea>
+    <paper-textarea label="Saisissez votre code Javascript ci-dessous:" value="{{value::input}}"></paper-textarea>
   </template>
 
   <script>
