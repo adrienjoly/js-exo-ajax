@@ -81,8 +81,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   // initialize myAnswers using iron-localstorage
   app.initDefaults = function(ev) {
     console.log("app.initDefaults");
-    // tip: use JSON.parse(localStorage['my-answers']); to display state of local storage data
-    // tip: use localStorage.clear(); to reset the local storage data
     this.myAnswers = {
       //qcm1: "large",
       code: "function(){\n\n}"
