@@ -32,5 +32,3 @@ Votre code sera noté sur le respect des règles, et des messages. => Veillez à
 Votre code doit être rédigé en Javascript, et utiliser seulement les fonctions natives du DOM. L'utilisation de jQuery ou tout autre module externe est interdite.
 
 Il est recommandé de tester votre code à l'aide de jsbin ou de Chrome Devtools.
-
-Saisissez votre code Javascript ci-dessous:

@@ -78,12 +78,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     app.$.paperDrawerPanel.closeDrawer();
   };
 
-  // initialize myAnswers using iron-localstorage
+  // initialize myAnswers using iron-localstorage (only if not found in localstorage)
   app.initDefaults = function(ev) {
     console.log("app.initDefaults");
     this.myAnswers = {
       //qcm1: "large",
-      code: "function(){\n\n}"
+      //code: "function(){\n\n}",
+      code1: "document.getElementById('formulaire').onsubmit = function (evt) {\n  /* saisissez votre code entre les accolades */\n};"
     }
   };
 
