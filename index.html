@@ -85,9 +85,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Accueil</span>
           </a>
-          <a data-route="exercise" href="{{baseUrl}}ex/1">
+          <a data-route="exercise1" href="{{baseUrl}}ex1">
             <iron-icon icon="exercise"></iron-icon>
             <span>Exercice 1</span>
+          </a>
+          <a data-route="exercise2" href="{{baseUrl}}ex2">
+            <iron-icon icon="exercise"></iron-icon>
+            <span>Exercice 2</span>
+          </a>
+          <a data-route="submit" href="{{baseUrl}}submit">
+            <iron-icon icon="submit"></iron-icon>
+            <span>Terminer</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
@@ -123,14 +131,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </section>
 
-            <section data-route="exercise">
+            <section data-route="exercise1">
               <paper-material elevation="1">
 
-                <h2>Exercice {{params.number}} - QCM</h2>
+                <h2>Exercice 1 - QCM</h2>
                 <p class="paper-font-subhead">Question bla bla</p>
                 <my-qcm value="{{myAnswers.qcm1}}"></my-qcm>
 
-                <h2>Exercice {{params.number}} - Code</h2>
+              </paper-material>
+            </section>
+
+            <section data-route="exercise2">
+              <paper-material elevation="1">
+
+                <h2>Exercice 2 - Code</h2>
                 <my-code value="{{myAnswers.code}}"></my-code>
 
               </paper-material>
