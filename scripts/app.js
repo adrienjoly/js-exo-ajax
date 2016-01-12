@@ -82,7 +82,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   app.initDefaults = function(ev) {
     console.log("app.initDefaults");
     this.myAnswers = {
-      //qcm1: "large",
+      qcm1: '',
+      qcm2: '',
+      qcm3: '',
+      qcm4: '',
       //code: "function(){\n\n}",
       code1: [
         "document.getElementById('formulaire').onsubmit = function (evt) {",
@@ -96,6 +99,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         "}"
       ].join('\n')
     }
+  };
+
+  app.renderData = function(qcm1, qcm2, qcm3, qcm4, code1, code2) {
+    // warning: if one of the parameters is not initialized, this function does not work
+    return JSON.stringify([qcm1, qcm2, qcm3, qcm4, code1, code2]);
   };
 
 })(document);
