@@ -146,7 +146,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   </zero-md>
                 </template>
 
-                <google-signin is-authorized="{{loggedIn}}" scopes="profile email" client-id="247219641427-pq1bbfkkpqvvsgps5t1fh1sjivb61dt4.apps.googleusercontent.com"></google-signin>
+                <google-signin
+                  is-authorized="{{loggedIn}}"
+                  scopes="profile email"
+                  hosted-domain="eemi.com"
+                  client-id="247219641427-pq1bbfkkpqvvsgps5t1fh1sjivb61dt4.apps.googleusercontent.com"
+                ></google-signin>
                 <!-- client id generated from https://console.developers.google.com/apis/credentials?project=eemi-own-exam&authuser=1 -->
 
               </paper-material>
