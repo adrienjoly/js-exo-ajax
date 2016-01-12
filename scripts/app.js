@@ -103,24 +103,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   app.loggedIn = false; // init default value, to be set by google-signin
 
+  window.addEventListener('google-signin-success', function() {
+    console.log('Loggedin');
+    var user = gapi.auth2.getAuthInstance().currentUser.get();
+    var profile = user.getBasicProfile();
+    console.log({
+      id: profile.getId(),
+      name: profile.getName(),
+      email: profile.getEmail(),
+      token: user.getAuthResponse().id_token
+    });
+  });
+
   app.renderData = function(qcm1, qcm2, qcm3, qcm4, code1, code2) {
     // warning: if one of the parameters is not initialized, this function does not work
     return JSON.stringify([qcm1, qcm2, qcm3, qcm4, code1, code2]);
   };
-
-  window.onSignIn = function(googleUser) {
-    // Useful data for your client-side scripts:
-    var profile = googleUser.getBasicProfile();
-    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-    console.log("Name: " + profile.getName());
-    console.log("Email: " + profile.getEmail());
-
-    // The ID token you need to pass to your backend:
-    var id_token = googleUser.getAuthResponse().id_token;
-    console.log("ID Token: " + id_token);
-
-    alert("Bienvenue, " + profile.getName());
-  };
-
 
 })(document);
