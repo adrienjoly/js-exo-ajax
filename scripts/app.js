@@ -101,6 +101,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
   };
 
+  app.loggedIn = false; // init default value, to be set by google-signin
+
   app.renderData = function(qcm1, qcm2, qcm3, qcm4, code1, code2) {
     // warning: if one of the parameters is not initialized, this function does not work
     return JSON.stringify([qcm1, qcm2, qcm3, qcm4, code1, code2]);
