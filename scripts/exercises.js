@@ -3,6 +3,10 @@
 
   var app = document.querySelector('#app');
 
+  app.genExercise = function(number) {
+    return './ex' + number + '.md';
+  };
+
   var DEFAULT_ANSWERS = {
     qcm1: '',
     qcm2: '',
