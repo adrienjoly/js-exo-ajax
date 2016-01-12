@@ -102,17 +102,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   };
 
   app.loggedIn = false; // init default value, to be set by google-signin
+  app.user = null;
 
   window.addEventListener('google-signin-success', function() {
     console.log('Loggedin');
     var user = gapi.auth2.getAuthInstance().currentUser.get();
     var profile = user.getBasicProfile();
-    console.log({
+    app.user = {
       id: profile.getId(),
       name: profile.getName(),
       email: profile.getEmail(),
       token: user.getAuthResponse().id_token
-    });
+    };
   });
 
   app.renderData = function(qcm1, qcm2, qcm3, qcm4, code1, code2) {
