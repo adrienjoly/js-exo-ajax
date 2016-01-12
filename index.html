@@ -242,7 +242,26 @@ alert(soustraction(somme(1, 2), 4));
             <section data-route="submit">
               <paper-material elevation="1">
                 <h2>Soumission</h2>
-                <p>{{renderData(myAnswers.qcm1, myAnswers.qcm2, myAnswers.qcm3, myAnswers.qcm4, myAnswers.code1, myAnswers.code2)}}</p>
+                <p>Pour soumettre votre copie, envoyez un email en suivant attentivement les étapes ci-dessous.</p>
+                <p>Pour éviter toute erreur, il est conseillé d'effectuer des copier-coller.</p>
+
+                <h3>Destinataire de l'email:</h3>
+                <paper-material elevation="1">
+                  <p style="font-family: monospace; margin: 0;">adrien.joly@eemi.com</p>
+                </paper-material>
+
+                <h3>Sujet de l'email:</h3>
+                <paper-material elevation="1">
+                  <p style="font-family: monospace; margin: 0;">PARTIEL DATA</p>
+                </paper-material>
+
+                <h3>Contenu de l'email:</h3>
+                <paper-material elevation="1">
+                  <p style="font-family: monospace; margin: 0;">{{renderData(myAnswers.qcm1, myAnswers.qcm2, myAnswers.qcm3, myAnswers.qcm4, myAnswers.code1, myAnswers.code2)}}</p>
+                </paper-material>
+
+                <p>Note: Ci-dessus, vous devriez reconnaitre une version compactée de vos réponses. Si ce n'est pas le cas, gardez une copie de vos réponses en dehors de cette fenêtre, rafraichissez la page, puis essayez à nouveau.</p>
+
               </paper-material>
             </section>
 
