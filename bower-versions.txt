@@ -1,0 +1,1439 @@
+bower check-new     Checking for new versions of the project dependencies...
+js-partiel-1 /Users/adrienjoly/Dev/bitbucket/js-partiel-1
+├── accessibility-developer-tools#2.10.0 extraneous
+├── async#1.5.0 extraneous (1.5.2 available)
+├── chai#2.3.0 extraneous (latest is 3.4.2)
+├── font-roboto#1.0.1 extraneous
+├── hydrolysis#1.21.4 extraneous
+├─┬ iron-a11y-announcer#1.0.4 extraneous
+│ └── polymer#1.2.3
+├─┬ iron-a11y-keys#1.0.4 extraneous
+│ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous (1.1.1 available)
+│ │ └── polymer#1.2.3
+│ └── polymer#1.2.3
+├─┬ iron-a11y-keys-behavior#1.1.0 extraneous (1.1.1 available)
+│ └── polymer#1.2.3
+├─┬ iron-ajax#1.1.1 extraneous
+│ ├── polymer#1.2.3
+│ └─┬ promise-polyfill#1.0.0
+│   └── polymer#1.2.3
+├─┬ iron-autogrow-textarea#1.0.10 extraneous
+│ ├─┬ iron-behaviors#1.0.11 (1.0.12 available)
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19 (0.7.20 available)
+│ ├─┬ iron-flex-layout#1.2.2
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-form-element-behavior#1.0.6
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-validatable-behavior#1.0.5
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └── polymer#1.2.3
+├─┬ iron-checked-element-behavior#1.0.3 extraneous (1.0.4 available)
+│ ├─┬ iron-form-element-behavior#1.0.6
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-validatable-behavior#1.0.5
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └── polymer#1.2.3
+├─┬ iron-collapse#1.0.4 extraneous (1.0.5 available)
+│ └── polymer#1.2.3
+├─┬ iron-component-page#1.1.2 extraneous (1.1.3 available)
+│ ├── hydrolysis#1.21.4 extraneous
+│ ├─┬ iron-ajax#1.1.1 extraneous
+│ │ ├── polymer#1.2.3
+│ │ └─┬ promise-polyfill#1.0.0
+│ │   └── polymer#1.2.3
+│ ├─┬ iron-doc-viewer#1.0.11 (1.0.12 available)
+│ │ ├─┬ marked-element#1.1.1
+│ │ │ ├── marked#0.3.5
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-button#1.0.10 (1.0.11 available)
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous (1.0.4 available)
+│ │ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-material#1.0.4 (1.0.5 available)
+│ │ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-ripple#1.0.5
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├── polymer#1.2.3
+│ │ └─┬ prism-element#1.0.3
+│ │   ├── polymer#1.2.3
+│ │   └── prism#1.3.0
+│ ├─┬ iron-flex-layout#1.2.2
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-icons#1.0.5 (1.1.1 available)
+│ │ ├─┬ iron-icon#1.0.7
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-selector#1.0.8
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ ├─┬ paper-header-panel#1.1.2
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-styles#1.0.13 (1.1.2 available)
+│ │ ├── font-roboto#1.0.1 extraneous
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-toolbar#1.1.2
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ └── polymer#1.2.3
+├─┬ iron-demo-helpers#1.0.2 extraneous (1.0.3 available)
+│ ├─┬ paper-styles#1.0.13
+│ │ ├── font-roboto#1.0.1 extraneous
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └── polymer#1.2.3
+├─┬ iron-dropdown#1.0.6 extraneous (1.1.0 available)
+│ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-behaviors#1.0.11
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ ├─┬ iron-overlay-behavior#1.1.1 (1.1.2 available)
+│ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-resizable-behavior#1.0.2
+│ │ └── polymer#1.2.3
+│ ├─┬ neon-animation#1.0.8 (1.0.9 available)
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-selector#1.0.8
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├── polymer#1.2.3
+│ │ └── web-animations-js#2.1.2 (latest is 2.1.4)
+│ └── polymer#1.2.3
+├─┬ iron-elements#1.0.6 extraneous (1.0.7 available)
+│ ├─┬ iron-a11y-announcer#1.0.4 extraneous
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-a11y-keys#1.0.4 extraneous
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-ajax#1.1.1 extraneous
+│ │ ├── polymer#1.2.3
+│ │ └─┬ promise-polyfill#1.0.0
+│ │   └── polymer#1.2.3
+│ ├─┬ iron-autogrow-textarea#1.0.10 extraneous
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-behaviors#1.0.11
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-collapse#1.0.4 extraneous (1.0.5 available)
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-component-page#1.1.2 extraneous (1.1.3 available)
+│ │ ├── hydrolysis#1.21.4 extraneous
+│ │ ├─┬ iron-ajax#1.1.1 extraneous
+│ │ │ ├── polymer#1.2.3
+│ │ │ └─┬ promise-polyfill#1.0.0
+│ │ │   └── polymer#1.2.3
+│ │ ├─┬ iron-doc-viewer#1.0.11
+│ │ │ ├─┬ marked-element#1.1.1
+│ │ │ │ ├── marked#0.3.5
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-button#1.0.10
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ paper-material#1.0.4
+│ │ │ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ paper-ripple#1.0.5
+│ │ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├── polymer#1.2.3
+│ │ │ └─┬ prism-element#1.0.3
+│ │ │   ├── polymer#1.2.3
+│ │ │   └── prism#1.3.0
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icons#1.0.5
+│ │ │ ├─┬ iron-icon#1.0.7
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-selector#1.0.8
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ paper-header-panel#1.1.2
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-toolbar#1.1.2
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-demo-helpers#1.0.2 extraneous (1.0.3 available)
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├── iron-doc-viewer#1.0.11 (1.0.12 available)
+│ ├─┬ iron-dropdown#1.0.6 extraneous (1.1.0 available)
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-overlay-behavior#1.1.1
+│ │ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ neon-animation#1.0.8
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├── polymer#1.2.3
+│ │ │ └── web-animations-js#2.1.2
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-flex-layout#1.2.2
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-form#1.0.13
+│ │ ├─┬ iron-ajax#1.1.1 extraneous
+│ │ │ ├── polymer#1.2.3
+│ │ │ └─┬ promise-polyfill#1.0.0
+│ │ │   └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-form-element-behavior#1.0.6
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-icon#1.0.7
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-icons#1.0.5
+│ │ ├─┬ iron-icon#1.0.7
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-iconset#1.0.4
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-iconset-svg#1.0.9
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-image#1.0.4
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-input#1.0.7 (1.0.8 available)
+│ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-jsonp-library#1.0.4
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-label#1.0.1
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-list#1.1.6 (1.1.7 available)
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-localstorage#1.0.5
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-media-query#1.0.8
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-menu-behavior#1.0.7
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-selector#1.0.8
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-meta#1.1.1
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-overlay-behavior#1.1.1
+│ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-pages#1.0.4 (1.0.5 available)
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-selector#1.0.8
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-range-behavior#1.0.4
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-resizable-behavior#1.0.2
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-selector#1.0.8
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ ├─┬ iron-signals#1.0.3
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-swipeable-container#1.0.0 (1.0.2 available)
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-test-helpers#1.1.0 (1.1.3 available)
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-validatable-behavior#1.0.5
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └─┬ iron-validator-behavior#1.0.1
+│   ├─┬ iron-meta#1.1.1
+│   │ └── polymer#1.2.3
+│   └── polymer#1.2.3
+├─┬ iron-fit-behavior#1.0.5 extraneous
+│ └── polymer#1.2.3
+├── lodash#3.10.1 extraneous
+├── mocha#2.3.4 extraneous
+├─┬ neon-elements#1.0.0 extraneous
+│ └─┬ neon-animation#1.0.8
+│   ├─┬ iron-meta#1.1.1
+│   │ └── polymer#1.2.3
+│   ├─┬ iron-resizable-behavior#1.0.2
+│   │ └── polymer#1.2.3
+│   ├─┬ iron-selector#1.0.8
+│   │ └─┬ polymer#1.2.3
+│   │   └── webcomponentsjs#0.7.19
+│   ├─┬ paper-styles#1.0.13
+│   │ ├── font-roboto#1.0.1 extraneous
+│   │ ├─┬ iron-flex-layout#1.2.2
+│   │ │ └── polymer#1.2.3
+│   │ └── polymer#1.2.3
+│   ├── polymer#1.2.3
+│   └── web-animations-js#2.1.2
+├── page#1.6.4 extraneous
+├─┬ paper-badge#1.1.1 extraneous
+│ ├─┬ iron-resizable-behavior#1.0.2
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-styles#1.0.13
+│ │ ├── font-roboto#1.0.1 extraneous
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └─┬ polymer#1.2.3
+│   └── webcomponentsjs#0.7.19
+├─┬ paper-card#1.0.8 extraneous
+│ ├─┬ iron-flex-layout#1.2.2
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-image#1.0.4
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-material#1.0.4
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └── polymer#1.2.3
+├─┬ paper-checkbox#1.0.16 extraneous (1.1.0 available)
+│ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-behaviors#1.0.10
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-ripple#1.0.5
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-styles#1.0.13
+│ │ ├── font-roboto#1.0.1 extraneous
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └── polymer#1.2.3
+├─┬ paper-dialog#1.0.3 extraneous
+│ ├─┬ neon-animation#1.0.8
+│ │ ├─┬ iron-meta#1.1.1
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-selector#1.0.8
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├── polymer#1.2.3
+│ │ └── web-animations-js#2.1.2
+│ ├─┬ paper-dialog-behavior#1.1.0 extraneous
+│ │ ├─┬ iron-overlay-behavior#1.1.1
+│ │ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├── paper-styles#1.0.13 (1.1.2 available)
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-styles#1.0.13
+│ │ ├── font-roboto#1.0.1 extraneous
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ └── polymer#1.2.3
+├─┬ paper-dialog-behavior#1.1.0 extraneous
+│ ├─┬ iron-overlay-behavior#1.1.1
+│ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├── paper-styles#1.0.13
+│ └── polymer#1.2.3
+├─┬ paper-dialog-scrollable#1.1.0 extraneous
+│ └── polymer#1.2.3
+├─┬ paper-drawer-panel#1.0.5 extraneous (1.0.6 available)
+│ ├─┬ iron-media-query#1.0.8
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-resizable-behavior#1.0.2
+│ │ └── polymer#1.2.3
+│ ├─┬ iron-selector#1.0.8
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ └── polymer#1.2.3
+├─┬ paper-elements#1.0.6 extraneous (1.0.7 available)
+│ ├─┬ paper-badge#1.1.1 extraneous
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ ├─┬ paper-behaviors#1.0.10
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-button#1.0.10
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-material#1.0.4
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-card#1.0.8 extraneous
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-image#1.0.4
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-material#1.0.4
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-checkbox#1.0.16 extraneous (1.1.0 available)
+│ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-dialog#1.0.3 extraneous
+│ │ ├─┬ neon-animation#1.0.8
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├── polymer#1.2.3
+│ │ │ └── web-animations-js#2.1.2
+│ │ ├─┬ paper-dialog-behavior#1.1.0 extraneous
+│ │ │ ├─┬ iron-overlay-behavior#1.1.1
+│ │ │ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├── paper-styles#1.0.13
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-dialog-behavior#1.1.0 extraneous
+│ │ ├─┬ iron-overlay-behavior#1.1.1
+│ │ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├── paper-styles#1.0.13
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-dialog-scrollable#1.1.0 extraneous
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-drawer-panel#1.0.5 extraneous (1.0.6 available)
+│ │ ├─┬ iron-media-query#1.0.8
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-selector#1.0.8
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-dropdown-menu#1.1.1 (1.1.2 available)
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icon#1.0.7
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icons#1.0.5
+│ │ │ ├─┬ iron-icon#1.0.7
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-input#1.1.2 (1.1.4 available)
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-autogrow-textarea#1.0.10 extraneous
+│ │ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-input#1.0.7
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-menu-button#1.0.3
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-dropdown#1.0.6 extraneous
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ ├─┬ iron-overlay-behavior#1.1.1
+│ │ │ │ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ neon-animation#1.0.8
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ ├── polymer#1.2.3
+│ │ │ │ │ └── web-animations-js#2.1.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ neon-animation#1.0.8
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├── polymer#1.2.3
+│ │ │ │ └── web-animations-js#2.1.2
+│ │ │ ├─┬ paper-material#1.0.4
+│ │ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-fab#1.1.0 (1.1.2 available)
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icon#1.0.7
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icons#1.0.5
+│ │ │ ├─┬ iron-icon#1.0.7
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-material#1.0.4
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-header-panel#1.1.2
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-icon-button#1.0.5 (1.0.6 available)
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icon#1.0.7
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icons#1.0.5
+│ │ │ ├─┬ iron-icon#1.0.7
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├── paper-input#1.1.2 (1.1.4 available)
+│ ├─┬ paper-item#1.1.2 (1.1.3 available)
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-listbox#1.1.0
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-collapse#1.0.4 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-menu-behavior#1.0.7
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-material#1.0.4
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-menu#4fecb43601 incompatible with ^1.0.0 (1.2.1 available)
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-collapse#1.0.4 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-menu-behavior#1.0.7
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-menu-button#1.0.3 (1.0.4 available)
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-dropdown#1.0.6 extraneous
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-overlay-behavior#1.1.1
+│ │ │ │ ├─┬ iron-fit-behavior#1.0.5 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ neon-animation#1.0.8
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├── polymer#1.2.3
+│ │ │ │ └── web-animations-js#2.1.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ neon-animation#1.0.8
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├── polymer#1.2.3
+│ │ │ └── web-animations-js#2.1.2
+│ │ ├─┬ paper-material#1.0.4
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-progress#1.0.7 (1.0.8 available)
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-range-behavior#1.0.4
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-radio-button#1.0.11 (1.0.12 available)
+│ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-radio-group#1.0.7 (1.0.8 available)
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-selector#1.0.8
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-ripple#1.0.5
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-scroll-header-panel#1.0.12 (1.0.14 available)
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-slider#1.0.8 (1.0.9 available)
+│ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├── paper-input#1.1.2
+│ │ ├─┬ paper-progress#1.0.7
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-range-behavior#1.0.4
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-spinner#1.1.0
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-styles#1.0.13
+│ │ ├── font-roboto#1.0.1 extraneous
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-tabs#1.2.3 (1.2.4 available)
+│ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └─┬ polymer#1.2.3
+│ │ │   └── webcomponentsjs#0.7.19
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-icon#1.0.7
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-menu-behavior#1.0.7
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-selector#1.0.8
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ iron-resizable-behavior#1.0.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-icon-button#1.0.5
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-icon#1.0.7
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-icons#1.0.5
+│ │ │ │ ├─┬ iron-icon#1.0.7
+│ │ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-iconset-svg#1.0.9
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-ripple#1.0.5
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ paper-styles#1.0.13
+│ │ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-toast#1.1.1
+│ │ ├─┬ iron-a11y-announcer#1.0.4 extraneous
+│ │ │ └── polymer#1.2.3
+│ │ ├── iron-overlay-behavior#1.1.1 (1.1.2 available)
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-toggle-button#1.0.11 (1.0.14 available)
+│ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ └── polymer#1.2.3
+│ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-behaviors#1.0.10
+│ │ │ ├─┬ iron-behaviors#1.0.11
+│ │ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └─┬ polymer#1.2.3
+│ │ │ │   └── webcomponentsjs#0.7.19
+│ │ │ ├─┬ iron-checked-element-behavior#1.0.3 extraneous
+│ │ │ │ ├─┬ iron-form-element-behavior#1.0.6
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ ├─┬ iron-validatable-behavior#1.0.5
+│ │ │ │ │ ├─┬ iron-meta#1.1.1
+│ │ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ │ └── polymer#1.2.3
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-ripple#1.0.5
+│ │ │ ├─┬ iron-a11y-keys-behavior#1.1.0 extraneous
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └── polymer#1.2.3
+│ ├─┬ paper-toolbar#1.1.2
+│ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ └── polymer#1.2.3
+│ │ ├─┬ paper-styles#1.0.13
+│ │ │ ├── font-roboto#1.0.1 extraneous
+│ │ │ ├─┬ iron-flex-layout#1.2.2
+│ │ │ │ └── polymer#1.2.3
+│ │ │ └── polymer#1.2.3
+│ │ └─┬ polymer#1.2.3
+│ │   └── webcomponentsjs#0.7.19
+│ └─┬ paper-tooltip#1.1.1
+│   ├─┬ neon-animation#1.0.8
+│   │ ├─┬ iron-meta#1.1.1
+│   │ │ └── polymer#1.2.3
+│   │ ├─┬ iron-resizable-behavior#1.0.2
+│   │ │ └── polymer#1.2.3
+│   │ ├─┬ iron-selector#1.0.8
+│   │ │ └─┬ polymer#1.2.3
+│   │ │   └── webcomponentsjs#0.7.19
+│   │ ├─┬ paper-styles#1.0.13
+│   │ │ ├── font-roboto#1.0.1 extraneous
+│   │ │ ├─┬ iron-flex-layout#1.2.2
+│   │ │ │ └── polymer#1.2.3
+│   │ │ └── polymer#1.2.3
+│   │ ├── polymer#1.2.3
+│   │ └── web-animations-js#2.1.2
+│   ├─┬ paper-styles#1.0.13
+│   │ ├── font-roboto#1.0.1 extraneous
+│   │ ├─┬ iron-flex-layout#1.2.2
+│   │ │ └── polymer#1.2.3
+│   │ └── polymer#1.2.3
+│   └── polymer#1.2.3
+├─┬ platinum-bluetooth#1.0.0 extraneous
+│ ├─┬ polymer#1.2.3
+│ │ └── webcomponentsjs#0.7.19
+│ └─┬ promise-polyfill#1.0.0
+│   └── polymer#1.2.3
+├─┬ platinum-elements#1.2.0 extraneous
+│ ├─┬ platinum-bluetooth#1.0.0 extraneous
+│ │ ├─┬ polymer#1.2.3
+│ │ │ └── webcomponentsjs#0.7.19
+│ │ └─┬ promise-polyfill#1.0.0
+│ │   └── polymer#1.2.3
+│ ├─┬ platinum-https-redirect#1.0.1
+│ │ └── polymer#1.2.3
+│ ├─┬ platinum-push-messaging#1.0.5
+│ │ ├── polymer#1.2.3
+│ │ └─┬ promise-polyfill#1.0.0
+│ │   └── polymer#1.2.3
+│ └─┬ platinum-sw#1.2.3
+│   ├── polymer#1.2.3
+│   └── sw-toolbox#2.1.0 (latest is 3.0.0)
+├── sinon-chai#2.8.0 extraneous
+├── sinonjs#1.17.1 extraneous
+├── stacky#1.3.1 extraneous (1.3.2 available)
+├── test-fixture#1.0.3 extraneous (1.1.0 available)
+├─┬ web-component-tester#3.4.2 extraneous (4.1.0 available)
+│ ├── accessibility-developer-tools#2.10.0 extraneous
+│ ├── async#1.5.0 extraneous (1.5.2 available)
+│ ├── chai#2.3.0 extraneous (latest is 3.4.2)
+│ ├── lodash#3.10.1 extraneous
+│ ├── mocha#2.3.4 extraneous
+│ ├── sinon-chai#2.8.0 extraneous
+│ ├── sinonjs#1.17.1 extraneous
+│ ├── stacky#1.3.1 extraneous (1.3.2 available)
+│ └── test-fixture#1.0.3 extraneous (1.1.0 available)
+└─┬ zero-md#0.2.0 extraneous
+  ├── marked#0.3.5
+  ├─┬ polymer#1.2.3
+  │ └── webcomponentsjs#0.7.19
+  └── prism#1.3.0 incompatible with ~1.0 (1.0.1 available, latest is 1.3.0)
