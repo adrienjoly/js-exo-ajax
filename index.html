@@ -85,22 +85,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Accueil</span>
           </a>
-          <a data-route="exercise1" href="{{baseUrl}}ex1">
-            <iron-icon icon="exercise"></iron-icon>
-            <span>Exercice 1</span>
-          </a>
-          <a data-route="exercise2" href="{{baseUrl}}ex2">
-            <iron-icon icon="exercise"></iron-icon>
-            <span>Exercice 2</span>
-          </a>
-          <a data-route="exercise3" href="{{baseUrl}}ex3">
-            <iron-icon icon="exercise"></iron-icon>
-            <span>Exercice 3</span>
-          </a>
-          <a data-route="submit" href="{{baseUrl}}submit">
-            <iron-icon icon="submit"></iron-icon>
-            <span>Terminer</span>
-          </a>
+          <template is="dom-if" if="{{myAnswers.loggedIn}}">
+            <a data-route="exercise1" href="{{baseUrl}}ex1">
+              <iron-icon icon="exercise"></iron-icon>
+              <span>Exercice 1</span>
+            </a>
+            <a data-route="exercise2" href="{{baseUrl}}ex2">
+              <iron-icon icon="exercise"></iron-icon>
+              <span>Exercice 2</span>
+            </a>
+            <a data-route="exercise3" href="{{baseUrl}}ex3">
+              <iron-icon icon="exercise"></iron-icon>
+              <span>Exercice 3</span>
+            </a>
+            <a data-route="submit" href="{{baseUrl}}submit">
+              <iron-icon icon="submit"></iron-icon>
+              <span>Terminer</span>
+            </a>
+          </template>
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -130,11 +132,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <section data-route="home">
               <paper-material elevation="1">
-                <h2>Introduction</h2>
-                <zero-md file="./intro.md">
-                  <!-- Remember to pass in empty container of class="md-html". -->
-                  <div class="md-html"></div>
-                </zero-md>
+
+                <template is="dom-if" if="{{!myAnswers.loggedIn}}">
+                  <h2>Introduction</h2>
+                  <p>Veuillez vous connecter à votre compte EEMI en utilisant le bouton ci-dessous svp:</p>
+                  <google-signin scopes="profile email" client-id="247219641427-bf9s9o98911sp4t7l62nfl8gj458r7h9.apps.googleusercontent.com"></google-signin>
+                </template>
+
+                <template is="dom-if" if="{{myAnswers.loggedIn}}">
+                  <h2>Introduction</h2>
+                  <zero-md file="./intro.md">
+                    <!-- Remember to pass in empty container of class="md-html". -->
+                    <div class="md-html"></div>
+                  </zero-md>
+                </template>
+
               </paper-material>
             </section>
 
