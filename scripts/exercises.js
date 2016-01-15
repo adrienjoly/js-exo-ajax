@@ -32,11 +32,7 @@
     qcm3: '',
     qcm4: '',
     //code: "function(){\n\n}",
-    code1: [
-      "document.getElementById('formulaire').onsubmit = function (evt) {",
-      "  /* saisissez votre code entre les accolades */",
-      "};"
-    ].join('\n'),
+    code1: '',
     code2: [
       "var results = document.getElementsByClassName('res');",
       "for (var i=0; i<results.length; ++i) {",
