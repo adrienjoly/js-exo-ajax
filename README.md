@@ -2,6 +2,18 @@ Running in production at: [js-partiel-1.herokuapp.com](https://js-partiel-1.hero
 
 **(Only people who have a Google Account registered at EEMI.com can log in)**
 
+Features:
+
+- 100% paperless examination software, 100% online;
+- designed for automated testing and evaluation of students' answers;
+- students are identified using their Google Apps account;
+- different variants of exercises for each student, to reduce and detect fraud;
+- multiple choice questions;
+- two exercises in which students have to submit javascript code;
+- answers and user data are hashed into a JSON object that can be submitted by email;
+- student's answers are kept at all times in browser's local storage, to prevent data loss;
+- beautiful UI thanks to Google Polymer and Material Design.
+
 TODO:
 
 - Make it possible to use without login, for demonstration purposes
