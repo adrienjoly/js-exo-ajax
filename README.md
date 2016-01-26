@@ -1,3 +1,13 @@
+Running in production at: [js-partiel-1.herokuapp.com](https://js-partiel-1.herokuapp.com)
+
+**(Only people who have a Google Account registered at EEMI.com can log in)**
+
+TODO:
+
+- Make it possible to use without login, for demonstration purposes
+- Define tests
+- Fix the app.genExercise() so that the USER ID (used to decide the variant of each exercise) fits into an integer
+
 Usage:
 
 - Run `server.sh`
