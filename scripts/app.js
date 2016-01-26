@@ -20,7 +20,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   if (window.location.port === '') {  // if production
     // Uncomment app.baseURL below and
     // set app.baseURL to '/your-pathname/' if running from folder in production
-    //app.baseUrl = '/cours-javascript/exo-template/';
+    app.baseUrl = '/js-partiel-1/';
   }
 
   app.displayInstalledToast = function() {
@@ -93,5 +93,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       token: user.getAuthResponse().id_token
     };
   });
+
+  // TODO: FOR PUBLIC TESTING => disable the following lines to activate Google Login
+
+  app.loggedIn = true;
+  app.user = {
+    id: 1,
+    name: 'Demo User',
+    email: 'demo-user@example.com',
+    token: 'XXX'
+  };
 
 })(document);
