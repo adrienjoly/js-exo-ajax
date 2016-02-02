@@ -157,16 +157,37 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </section>
 
+            <!-- EXERCICE (CODE) -->
 
+            <section data-route="code">
               <paper-material elevation="1">
+                <h2>Code</h2>
+                <my-code
+                  label="Saisissez votre code HTML ci-dessous:"
+                  value="{{myAnswers.htmlCode}}">
+                </my-code>
+                <my-code
+                  label="Saisissez votre code Javascript ci-dessous:"
+                  value="{{myAnswers.jsCode}}">
+                </my-code>
               </paper-material>
             </section>
 
+            <section data-route="test">
               <paper-material elevation="1">
+                <h2>Test</h2>
+                <div id="testContainer"></div>
+                <script id="testScriptContainer"></script>
+                <!--<iframe id="testIframe" width="100%" sandbox="allow-forms allow-popups allow-scripts allow-same-origin allow-modals"></iframe>-->
               </paper-material>
             </section>
 
+            <section data-route="progress">
               <paper-material elevation="1">
+                <h2>Progression</h2>
+                <ul>
+                  <li>Modifier le contenu </li>
+                </ul>
               </paper-material>
             </section>
 
