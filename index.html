@@ -160,12 +160,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <!-- EXERCICE (CODE) -->
 
             <section data-route="code">
+
+              <paper-material elevation="1">
+                <div id="testView">
+                  <label for="saisie">Saisissez un mot clé à chercher:</label>
+                  <br>
+                  <input id="saisie">
+                  <button id="bouton" onclick="app.executer()">Executer</button>
+                  <br>
+                  <label for="resultat">Résultat(s):</label>
+                  <div id="resultat">
+                  </div>
+                </div>
+              </paper-material>
+
               <paper-material elevation="1">
                 <h2>Code</h2>
+                <!--
                 <my-code
                   label="Saisissez votre code HTML ci-dessous:"
                   value="{{myAnswers.htmlCode}}">
                 </my-code>
+                <paper-textarea
+                  label="Code HTML fourni:"
+                  value="{{myAnswers.htmlCode}}"
+                  readonly>
+                </paper-textarea>
+                -->
                 <my-code
                   label="Saisissez votre code Javascript ci-dessous:"
                   value="{{myAnswers.jsCode}}">

@@ -3,6 +3,22 @@
 
   var app = document.querySelector('#app');
 
+  app.addEventListener('dom-change', function() {
+    console.log('observing #resultat...');
+    var _this = this;
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        //console.log('mutation', mutation.type, mutation.target.data);
+        if (mutation.type == 'characterData') {
+          _this.onResultChange(mutation.target.data);
+        }
+      });    
+    });
+    observer.observe(document.querySelector('#resultat'), {
+      characterData: true,
+      subtree: true
+    });
+  });
 
   // testing from console:
   // document.querySelector('#app').set('user', {id: 0});
@@ -47,6 +63,24 @@
     doc.writeln(content);
     doc.close();
   }
+
+  app.executer = function() {
+    console.log('run!');
+    var fn = Function(this.myAnswers.jsCode);
+    fn();
+  };
+
+  app.onResultChange = function(innerHTML){
+    console.log('onResultChange', innerHTML);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://httpbin.org/get');
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+        alert(xhr.responseText == innerHTML ? 'bravo!' : 'essaye encore');
+      }
+    };
+    xhr.send(null);
+  };
 
   app.onAnswersUpdate = function(update){
     //console.log('onAnswersUpdate', update);
