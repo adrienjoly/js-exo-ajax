@@ -31,7 +31,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app.closeDrawer();
       next();
     }
-
+    
     // Routes
     page('*', scrollToTop, closeDrawer, function(ctx, next) {
       next();
@@ -45,16 +45,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app.route = 'home';
     });
 
+/*
     page('/submit', function() {
       app.route = 'submit';
     });
 
-/*
     page('/ex/:number', function(data) {
       app.route = 'exercise';
       app.params = data.params;
     });
-*/
+
     page('/code', function(data) {
       app.route = 'code';
     });
@@ -66,6 +66,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     page('/progress', function(data) {
       app.route = 'progress';
     });
+*/
 
     // 404
     page('*', function() {

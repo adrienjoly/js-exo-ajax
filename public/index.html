@@ -64,6 +64,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <template is="dom-bind" id="app">
 
+    <!-- persistence of student's answers in localstorage -->
     <iron-localstorage
       name="my-answers"
       value="{{myAnswers}}"
@@ -85,6 +86,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Accueil</span>
           </a>
+          <!--
           <template is="dom-if" if="{{loggedIn}}">
             <a data-route="code" href="{{baseUrl}}code">
               <iron-icon icon="exercise"></iron-icon>
@@ -103,6 +105,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <span>Terminer</span>
             </a>
           </template>
+          -->
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -153,7 +156,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <!-- EXERCICE (CODE) -->
-
+            <!--
             <section data-route="code">
 
               <paper-material elevation="1">
@@ -171,17 +174,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
               <paper-material elevation="1">
                 <h2>Code</h2>
-                <!--
-                <my-code
-                  label="Saisissez votre code HTML ci-dessous:"
-                  value="{{myAnswers.htmlCode}}">
-                </my-code>
-                <paper-textarea
-                  label="Code HTML fourni:"
-                  value="{{myAnswers.htmlCode}}"
-                  readonly>
-                </paper-textarea>
-                -->
                 <my-code
                   label="Saisissez votre code Javascript ci-dessous:"
                   value="{{myAnswers.jsCode}}">
@@ -194,7 +186,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <h2>Test</h2>
                 <div id="testContainer"></div>
                 <script id="testScriptContainer"></script>
-                <!--<iframe id="testIframe" width="100%" sandbox="allow-forms allow-popups allow-scripts allow-same-origin allow-modals"></iframe>-->
               </paper-material>
             </section>
 
@@ -227,6 +218,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
               </paper-material>
             </section>
+            -->
 
           </iron-pages>
         </div>
@@ -243,7 +235,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="scripts/app.js"></script>
   <!-- endbuild-->
 
+  <!--
   <script src="scripts/exercises.js"></script>
+  -->
+  
 </body>
 
 </html>
