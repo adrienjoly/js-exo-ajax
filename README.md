@@ -1,8 +1,12 @@
-# Interactive AJAX Exercise
+# Javascript Exercise - AJAX
 
-Running in production at: [adrienjoly.com/js-tp-i](http://adrienjoly.com/js-tp-i)
+A web application to test a student's skill to send an AJAX HTTP request.
 
-### Usage:
+### Usage
 
-- Run `server.sh`
-- Open [localhost:8000](http://localhost:8000)
+- Run the server: `npm start` (after a successful `npm install`)
+- Use the client: [localhost:8000](http://localhost:8000)
+
+### API
+
+TODO
