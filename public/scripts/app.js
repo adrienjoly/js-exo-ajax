@@ -63,6 +63,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   app.handleAjaxError = function() {
     console.log("Ajax Error:", arguments);
+    alert('Une erreur est survenue. Veuillez contacter votre enseignant.');
   };
 
   app.handleAjaxResponse = function() {
