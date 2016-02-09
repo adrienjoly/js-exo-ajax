@@ -80,6 +80,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     ></iron-localstorage>
 
     <!-- ajax request to notify the server of user login -->
+    <!--
     <iron-ajax
       id="ajaxReq"
       method="POST"
@@ -89,7 +90,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       on-request="handleAjaxRequest"
       on-error="handleAjaxError"
       on-response="handleAjaxResponse"
-      debounce-duration="300"></iron-ajax>
+      debounce-duration="300"
+    ></iron-ajax>
+    -->
 
     <paper-drawer-panel id="paperDrawerPanel">
       <!-- Drawer Scroll Header Panel -->
@@ -158,6 +161,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                 <template is="dom-if" if="{{loggedIn}}">
                   <h2>Bonjour, {{user.name}}</h2>
+                </template>
+
+                <template is="dom-if" if="{{pending}}">
+                  <h2>Veuillez patienter</h2>
+                  <p>Identification et test...</p>
+                  <p>Si ce message reste affiché plus de 10 secondes, merci de prévenir votre enseignant.</p>
+                </template>
+
+                <template is="dom-if" if="{{error}}">
+                  <p style="color:red;">Erreur: {{error.message}}</p>
+                  <p>Merci d'envoyer ce message d'erreur à votre enseignant.</p>
+                </template>
+
+                <template is="dom-if" if="{{ready}}">
+                  <p style="color:green;">Vous êtes bien inscrit(e).</p>
                   <zero-md file="./intro.md">
                     <!-- Remember to pass in empty container of class="md-html". -->
                     <div class="md-html"></div>

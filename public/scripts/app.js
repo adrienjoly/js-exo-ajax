@@ -54,9 +54,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   app.title = 'Javascript Exo - Ajax';
   app.loggedIn = false; // init default value, to be set by google-signin
+  app.pending = null;
+  app.ready = null;
+  app.error = null;
   app.user = null;
   app.hashedAnswers = null;
-
+  /*
   app.handleAjaxRequest = function() {
     console.log("Ajax Request:", arguments);
   };
@@ -69,30 +72,60 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   app.handleAjaxResponse = function() {
     console.log("Ajax Response:", arguments);
   };
+  */
+  window.addEventListener('google-signed-out', function() {
+    app.ready = false;
+  });
+
 
   window.addEventListener('google-signin-success', function() {
-    console.log('Loggedin');
-    var user = gapi.auth2.getAuthInstance().currentUser.get();
-    var profile = user.getBasicProfile();
-    app.user = {
-      id: profile.getId(),
-      name: profile.getName(),
-      email: profile.getEmail(),
-      token: user.getAuthResponse().id_token
-    };
-    var hash = JSON.stringify([ app.user.id, app.user.name, app.user.email ]);
+    console.log('Logging in...');
+    function error(e) {
+      app.error = e;
+      app.pending = false;
+      console.error(e);
+      //alert(e.message);
+    }
     try {
+      app.pending = true;
+      // 1) login
+      var user = gapi.auth2.getAuthInstance().currentUser.get();
+      var profile = user.getBasicProfile();
+      app.user = {
+        id: profile.getId(),
+        name: profile.getName(),
+        email: profile.getEmail(),
+        token: user.getAuthResponse().id_token
+      };
+      console.log('Logged in :-)');
+      // 2) set cookie
+      var hash = JSON.stringify([ app.user.id, app.user.name, app.user.email ]);
       app.$.studentCookie.value = hash;
       var cookie = app.$.studentCookie.createCookie();
       var cookieValue = app.$.studentCookie.readCookie();
       console.log(hash, app.$.studentCookie.value, cookieValue);
       if (decodeURIComponent(cookieValue) != hash) {
-        throw new Error("incorrect cookie");
+        throw new Error('Veuillez activer les cookies dans votre navigateur puis essayez à nouveau.');
       }
-      app.$.ajaxReq.generateRequest(); // => will call handleAjaxResponse() on successful server response
+      // 3) send test request to server
+      //app.$.ajaxReq.generateRequest(); // => will call handleAjaxResponse() on successful server response
+      var xhr = new XMLHttpRequest(); 
+      xhr.open('POST', '/test', true);
+      xhr.onreadystatechange = function() {
+        console.log(xhr.readyState, xhr.status, xhr.responseText);
+        if (xhr.readyState == 4) {
+          app.pending = false;
+          if (xhr.status == 200) {
+            app.ready = true;
+            // successful login and ajax request
+          } else {
+            error(new Error('Status: ' + xhr.status));
+          }
+        }
+      };
+      xhr.send(JSON.stringify({ test: true }));
     } catch(e) {
-      console.error(e);
-      alert('Veuillez activer les cookies dans votre navigateur puis essayez à nouveau.');
+      error(e);
     }
   });
 
