@@ -9,7 +9,7 @@ var cookieParser = require('cookie-parser');
 
 var PORT = process.env.PORT || 8080;
 
-function storeLogin(cookie) {
+function logRequest(cookie, body) {
   var Spreadsheet = require('google-spreadsheet-append-es5');
   var spreadsheet = Spreadsheet({
     auth: {
@@ -19,7 +19,11 @@ function storeLogin(cookie) {
     fileId: "1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA" // => https://docs.google.com/spreadsheets/d/1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA/edit#gid=0
   });
   // append new row
-  spreadsheet.add({ timestamp: new Date(), cookie: cookie }, function(err, res){
+  spreadsheet.add({
+    timestamp: new Date(),
+    cookie: cookie,
+    body: body
+  }, function(err, res){
     if (err) {
       console.error('storeLogin error:', err);
     }
@@ -53,9 +57,14 @@ var io = socketio(httpServer);
 
 // /tweet is a POST API endpoint for users to connect and send messages
 app.use('/test', function (req, response, next) {
-  console.log('POST /test from:', req.connection.remoteAddress, (req.cookies || {}).studentid);
-  storeLogin((req.cookies || {}).studentid);
-  response.end(JSON.stringify({ ok: 'OK' }));
+  var cookie = (req.cookies || {}).studentid;
+  console.log('POST /test from:', req.connection.remoteAddress, cookie, req.body);
+  logRequest(cookie, typeof req.body == "object" ? JSON.stringify(req.body) : req.body);
+  var result = {
+    hasCookie: !!cookie,
+    hasBody: req.body && req.body.test
+  };
+  response.end(JSON.stringify(result));
   // display message on log.html
   //io.emit('chat', { message: req.body.message, ip: req.connection.remoteAddress });
 });
