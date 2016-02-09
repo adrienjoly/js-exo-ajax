@@ -52,6 +52,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     app.$.paperDrawerPanel.closeDrawer();
   };
 
+  app.title = 'Javascript Exo - Ajax';
   app.loggedIn = false; // init default value, to be set by google-signin
   app.user = null;
   app.hashedAnswers = null;
