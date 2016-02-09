@@ -71,6 +71,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       on-iron-localstorage-load-empty="initDefaults"
     ></iron-localstorage>
 
+    <!-- ajax request to notify the server of user login -->
+    <iron-ajax
+      id="ajaxReq"
+      method="POST"
+      url="/test"
+      params='{"message":"logged in"}'
+      handle-as="json"
+      on-request="handleAjaxRequest"
+      on-error="handleAjaxError"
+      on-response="handleAjaxResponse"
+      debounce-duration="300"></iron-ajax>
+
     <paper-drawer-panel id="paperDrawerPanel">
       <!-- Drawer Scroll Header Panel -->
       <paper-scroll-header-panel drawer fixed>
@@ -238,7 +250,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!--
   <script src="scripts/exercises.js"></script>
   -->
-  
+
 </body>
 
 </html>

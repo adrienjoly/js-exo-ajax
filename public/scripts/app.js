@@ -57,6 +57,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   app.user = null;
   app.hashedAnswers = null;
 
+  app.handleAjaxRequest = function() {
+    console.log("Ajax Request:", arguments);
+  };
+
+  app.handleAjaxError = function() {
+    console.log("Ajax Error:", arguments);
+  };
+
+  app.handleAjaxResponse = function() {
+    console.log("Ajax Response:", arguments);
+  };
+
   window.addEventListener('google-signin-success', function() {
     console.log('Loggedin');
     var user = gapi.auth2.getAuthInstance().currentUser.get();
@@ -67,6 +79,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       email: profile.getEmail(),
       token: user.getAuthResponse().id_token
     };
+    app.$.ajaxReq.generateRequest();
+    //Polymer.dom(document).querySelector('#ajaxReq').generateRequest();
   });
 
   /*
