@@ -79,8 +79,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       email: profile.getEmail(),
       token: user.getAuthResponse().id_token
     };
-    app.$.ajaxReq.generateRequest();
-    //Polymer.dom(document).querySelector('#ajaxReq').generateRequest();
+    var hash = JSON.stringify([ app.user.id, app.user.name, app.user.email ]);
+    try {
+      app.$.studentCookie.value = hash;
+      var cookie = app.$.studentCookie.createCookie();
+      var cookieValue = app.$.studentCookie.readCookie();
+      console.log(hash, app.$.studentCookie.value, cookieValue);
+      if (decodeURIComponent(cookieValue) != hash) {
+        throw new Error("incorrect cookie");
+      }
+      app.$.ajaxReq.generateRequest(); // => will call handleAjaxResponse() on successful server response
+    } catch(e) {
+      console.error(e);
+      alert('Veuillez activer les cookies dans votre navigateur puis essayez à nouveau.');
+    }
   });
 
   /*

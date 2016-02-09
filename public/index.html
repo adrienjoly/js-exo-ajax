@@ -64,6 +64,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <template is="dom-bind" id="app">
 
+    <!-- to store and transmit student's identify in ajax requests -->
+    <polymer-cookie
+      id="studentCookie"
+      name="studentid"
+      time=1
+      format="d"
+    ></polymer-cookie>
+
     <!-- persistence of student's answers in localstorage -->
     <iron-localstorage
       name="my-answers"

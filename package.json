@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "postinstall": "cd public; ../node_modules/bower/bin/bower install; cd ..",
-    "test": "curl localhost:8080/test -d '{\"message\":\"bonjour\"}' --cookie \"Cho=Kim;Greet=Hello\"",
+    "test": "curl localhost:8080/test -d '{\"message\":\"bonjour\"}' --cookie \"studentid=test\"",
     "deploy": "git push heroku",
     "start": "node server.js"
   },

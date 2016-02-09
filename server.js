@@ -36,7 +36,7 @@ var io = socketio(httpServer);
 
 // /tweet is a POST API endpoint for users to connect and send messages
 app.use('/test', function (req, response, next) {
-  console.log('POST /test from:', req.connection.remoteAddress, req.cookies);
+  console.log('POST /test from:', req.connection.remoteAddress, (req.cookies || {}).studentid);
   response.end(JSON.stringify({ ok: 'OK' }));
   // display message on log.html
   //io.emit('chat', { message: req.body.message, ip: req.connection.remoteAddress });
