@@ -9,6 +9,23 @@ var cookieParser = require('cookie-parser');
 
 var PORT = process.env.PORT || 8080;
 
+function storeLogin(cookie) {
+  var Spreadsheet = require('google-spreadsheet-append-es5');
+  var spreadsheet = Spreadsheet({
+    auth: {
+      email: "login-logger@eemi-own-exam.iam.gserviceaccount.com", // <= https://console.developers.google.com/permissions/serviceaccounts?project=eemi-own-exam&authuser=1
+      keyFile: "google-drive-key.pem"
+    },
+    fileId: "1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA" // => https://docs.google.com/spreadsheets/d/1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA/edit#gid=0
+  });
+  // append new row
+  spreadsheet.add({ timestamp: new Date(), cookie: cookie }, function(err, res){
+    if (err) {
+      console.error('storeLogin error:', err);
+    }
+  });
+}
+
 var allowCrossDomain = function(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS'); // TODO: reduce
@@ -37,6 +54,7 @@ var io = socketio(httpServer);
 // /tweet is a POST API endpoint for users to connect and send messages
 app.use('/test', function (req, response, next) {
   console.log('POST /test from:', req.connection.remoteAddress, (req.cookies || {}).studentid);
+  storeLogin((req.cookies || {}).studentid);
   response.end(JSON.stringify({ ok: 'OK' }));
   // display message on log.html
   //io.emit('chat', { message: req.body.message, ip: req.connection.remoteAddress });
