@@ -5,6 +5,7 @@ var connect = require('connect');
 var socketio = require('socket.io');
 var bodyParser = require('body-parser');
 var serveStatic = require('serve-static');
+var cookieParser = require('cookie-parser');
 
 var PORT = process.env.PORT || 8080;
 
@@ -24,6 +25,7 @@ var allowCrossDomain = function(req, res, next) {
 // Configure the app
 var app = connect();
 app.use(allowCrossDomain);
+app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false })); // parse urlencoded request bodies into req.body
 app.use(bodyParser.json({ type: '*/*', strict: false })); // parse json request bodies into req.body
 app.use(serveStatic('./public', {'index': ['index.html']})); // Serve public files
@@ -33,19 +35,11 @@ var httpServer = http.createServer(app)
 var io = socketio(httpServer);
 
 // /tweet is a POST API endpoint for users to connect and send messages
-app.use('/tweet', function (req, response, next) {
-  console.log('POST /tweet from:', req.connection.remoteAddress, req.body);
+app.use('/test', function (req, response, next) {
+  console.log('POST /test from:', req.connection.remoteAddress, req.cookies);
   response.end(JSON.stringify({ ok: 'OK' }));
   // display message on log.html
-  io.emit('chat', { message: req.body.message, ip: req.connection.remoteAddress });
-});
-
-app.use('/image', function (req, response, next) {
-  response.end('https://jstwitter2.herokuapp.com/image.jpg');
-});
-
-app.use('/images.json', function (req, response, next) {
-  response.end('{"urls": [ "https://http.cat/300", "https://http.cat/200", "https://http.cat/400" ]}');
+  //io.emit('chat', { message: req.body.message, ip: req.connection.remoteAddress });
 });
 
 app.use(function (req, response, next) {
