@@ -6,16 +6,18 @@ var socketio = require('socket.io');
 var bodyParser = require('body-parser');
 var serveStatic = require('serve-static');
 var cookieParser = require('cookie-parser');
+var Spreadsheet = require('google-spreadsheet-append-es5');
 
 var PORT = process.env.PORT || 8080;
 
+var GDRIVE_AUTH = {
+  email: "login-logger@eemi-own-exam.iam.gserviceaccount.com", // <= https://console.developers.google.com/permissions/serviceaccounts?project=eemi-own-exam&authuser=1
+  keyFile: "google-drive-key.pem"
+};
+
 function logRequest(cookie, body) {
-  var Spreadsheet = require('google-spreadsheet-append-es5');
   var spreadsheet = Spreadsheet({
-    auth: {
-      email: "login-logger@eemi-own-exam.iam.gserviceaccount.com", // <= https://console.developers.google.com/permissions/serviceaccounts?project=eemi-own-exam&authuser=1
-      keyFile: "google-drive-key.pem"
-    },
+    auth: GDRIVE_AUTH,
     fileId: "1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA" // => https://docs.google.com/spreadsheets/d/1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA/edit#gid=0
   });
   // append new row
@@ -28,6 +30,20 @@ function logRequest(cookie, body) {
       console.error('storeLogin error:', err);
     }
   });
+}
+
+function logSolution(cookie, body, cb) {
+  var spreadsheet = Spreadsheet({
+    auth: GDRIVE_AUTH,
+    fileId: "1rNft7ZoT-8ie1dDm-eMJBX_28Knc4VpOXuSNCfw6nJw" // => https://docs.google.com/spreadsheets/d/1rNft7ZoT-8ie1dDm-eMJBX_28Knc4VpOXuSNCfw6nJw/edit#gid=0
+  });
+  // append new row
+  spreadsheet.add({
+    timestamp: new Date(),
+    cookie: cookie,
+    answer: body.ajaxResponse,
+    js: body.jsCode
+  }, cb);
 }
 
 var allowCrossDomain = function(req, res, next) {
@@ -55,7 +71,7 @@ app.use(serveStatic('./public', {'index': ['index.html']})); // Serve public fil
 var httpServer = http.createServer(app)
 var io = socketio(httpServer);
 
-// /tweet is a POST API endpoint for users to connect and send messages
+// POST API endpoint used to test connection with server before accessing the exercise
 app.use('/test', function (req, response, next) {
   var cookie = (req.cookies || {}).studentid;
   console.log('POST /test from:', req.connection.remoteAddress, cookie, req.body);
@@ -69,8 +85,33 @@ app.use('/test', function (req, response, next) {
   //io.emit('chat', { message: req.body.message, ip: req.connection.remoteAddress });
 });
 
+// POST API endpoint used to test connection with server before accessing the exercise
+app.use('/submit', function (req, response, next) {
+  var cookie = (req.cookies || {}).studentid;
+  console.log(req.method, req.url, 'from:', req.connection.remoteAddress);
+  try {
+    if (req.method.toUpperCase() != 'POST') throw Error('invalid request');
+    console.info('cookie:', cookie);
+    console.info('body:', typeof req.body, req.body);
+    logSolution(cookie, req.body, function(err) {
+      if (err) {
+        console.error('logSolution error:', err);
+        response.statusCode = 500; // internal server error
+        response.end(err.message);
+      } else {
+        response.end('Votre solution est bien reçue. Merci !\n');
+      }
+    });
+  } catch (e) {
+    console.error('error:', e.message, e.stack);
+    response.statusCode = 400; // or 405 = method not allowed
+    response.end(e.message);
+  }
+});
+
 app.use(function (req, response, next) {
-  console.log('invalid request from:', req.connection.remoteAddress);
+  console.log(req.method, req.url, '=> invalid request from:', req.connection.remoteAddress);
+  response.statusCode = 404;
   response.end('invalid request...\n');
   //return next();
 });

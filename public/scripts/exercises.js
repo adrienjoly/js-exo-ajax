@@ -120,10 +120,7 @@
         }
       }
     };
-    xhr.send(JSON.stringify({
-      student: this.user,
-      solutions: this.myAnswers
-    }));
+    xhr.send(JSON.stringify(this.myAnswers));
   };
 
   /*
