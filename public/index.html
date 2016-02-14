@@ -109,26 +109,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Accueil</span>
           </a>
-          <!--
-          <template is="dom-if" if="{{loggedIn}}">
-            <a data-route="code" href="{{baseUrl}}code">
+          <template is="dom-if" if="{{ready}}">
+            <a data-route="exercise" href="{{baseUrl}}ex">
               <iron-icon icon="exercise"></iron-icon>
-              <span>Code</span>
-            </a>
-            <a data-route="test" href="{{baseUrl}}test">
-              <iron-icon icon="exercise"></iron-icon>
-              <span>Test</span>
-            </a>
-            <a data-route="progress" href="{{baseUrl}}progress">
-              <iron-icon icon="exercise"></iron-icon>
-              <span>Progression</span>
-            </a>
-            <a data-route="submit" href="{{baseUrl}}submit">
-              <iron-icon icon="submit"></iron-icon>
-              <span>Terminer</span>
+              <span>Exercice</span>
             </a>
           </template>
-          -->
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -175,11 +161,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </template>
 
                 <template is="dom-if" if="{{ready}}">
-                  <p style="color:green;">Vous êtes bien inscrit(e).</p>
-                  <zero-md file="./intro.md">
-                    <!-- Remember to pass in empty container of class="md-html". -->
-                    <div class="md-html"></div>
-                  </zero-md>
+                  <p style="color:green;">Vous pouvez maintenant accéder à l'onglet "Exercice".</p>
                 </template>
 
                 <google-signin
@@ -194,48 +176,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <!-- EXERCICE (CODE) -->
-            <!--
-            <section data-route="code">
+
+            <section data-route="exercise">
 
               <paper-material elevation="1">
-                <div id="testView">
-                  <label for="saisie">Saisissez un mot clé à chercher:</label>
-                  <br>
-                  <input id="saisie">
-                  <button id="bouton" onclick="app.executer()">Executer</button>
-                  <br>
-                  <label for="resultat">Résultat(s):</label>
-                  <div id="resultat">
-                  </div>
-                </div>
+                <h2>Énoncé</h2>
+                <zero-md file="./exercice.md">
+                  <!-- Remember to pass in empty container of class="md-html". -->
+                  <div class="md-html"></div>
+                </zero-md>
               </paper-material>
 
               <paper-material elevation="1">
-                <h2>Code</h2>
+                <h2>Votre solution</h2>
                 <my-code
                   label="Saisissez votre code Javascript ci-dessous:"
-                  value="{{myAnswers.jsCode}}">
-                </my-code>
+                  value="{{myAnswers.jsCode}}"
+                ></my-code>
+                <paper-button raised>
+                  <iron-icon icon="touch-app"></iron-icon>Executer
+                </paper-button>
+                <paper-button raised>
+                  <iron-icon icon="assignment-turned-in"></iron-icon>Rendre votre solution
+                </paper-button>
               </paper-material>
+
+              <script id="testScriptContainer"></script>
+
             </section>
 
-            <section data-route="test">
-              <paper-material elevation="1">
-                <h2>Test</h2>
-                <div id="testContainer"></div>
-                <script id="testScriptContainer"></script>
-              </paper-material>
-            </section>
-
-            <section data-route="progress">
-              <paper-material elevation="1">
-                <h2>Progression</h2>
-                <ul>
-                  <li>Modifier le contenu </li>
-                </ul>
-              </paper-material>
-            </section>
-
+            <!--
             <section data-route="submit">
               <paper-material elevation="1">
                 <h2>Soumission</h2>
