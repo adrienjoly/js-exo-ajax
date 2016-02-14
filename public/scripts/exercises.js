@@ -86,7 +86,8 @@
   // document.querySelector('#app').set('user', {id: 0});
 
   var DEFAULT_ANSWERS = {
-    jsCode: ''
+    jsCode: '',
+    ajaxResponse: ''
   };
 
   // initialize myAnswers using iron-localstorage (only if not found in localstorage)
@@ -96,11 +97,36 @@
   };
 
   app.executer = function() {
-    console.log('running student code');
-    var fn = Function(this.myAnswers.jsCode);
-    fn();
+    // 1)
+    console.log('running student code...');
+    try {    
+      var fn = Function(this.myAnswers.jsCode);
+      fn();
+    } catch (e) {
+      alert('Attention, votre code a provoqué une erreur. Consultez votre console.');
+      console.error(e);
+    }
+    // 2)
+    console.log('submitting solutions to server...');
+    var xhr = new XMLHttpRequest(); 
+    xhr.open('POST', '/submit', true);
+    xhr.onreadystatechange = function() {
+      console.log('submit-status', xhr.readyState, xhr.status, xhr.responseText);
+      if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+          alert(xhr.responseText);
+        } else {
+          alert(xhr.responseText || 'Une erreur ' + xhr.status + ' est survenue en rendant votre solution. Veuillez en informer votre enseignant.');
+        }
+      }
+    };
+    xhr.send(JSON.stringify({
+      student: this.user,
+      solutions: this.myAnswers
+    }));
   };
 
+  /*
   // cf https://www.polymer-project.org/1.0/docs/devguide/properties.html#observing-path-changes
   app.observers = [
     'onAnswersUpdate(myAnswers.*)',
@@ -111,7 +137,7 @@
   app.onAnswersUpdate = function(update){
     //console.log('onAnswersUpdate', update);
     if (!this.myAnswers) return;
-    Polymer.dom(document).querySelector('#testContainer').innerHTML = this.myAnswers.htmlCode;
+    //Polymer.dom(document).querySelector('#testContainer').innerHTML = this.myAnswers.htmlCode;
     //Polymer.dom(document).querySelector('#testScriptContainer').innerHTML = this.myAnswers.jsCode; // does not re-run javascript code on update
     //eval(this.myAnswers.jsCode); // very unsafe
     //var iframe = document.getElementById('testIframe');
@@ -119,5 +145,6 @@
     //writeToIframe(iframe, iframeContent)
     this.hashedAnswers = JSON.stringify([ this.user, this.myAnswers ]);
   }
+  */
 
 })(document);

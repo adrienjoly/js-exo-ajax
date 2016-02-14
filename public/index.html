@@ -189,44 +189,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
               <paper-material elevation="1">
                 <h2>Votre solution</h2>
+
+                <h4 style="margin-bottom:0;">Code Javascript de votre requête AJAX:</h4>
                 <my-code
-                  label="Saisissez votre code Javascript ci-dessous:"
+                  label="Code Javascript"
                   value="{{myAnswers.jsCode}}"
                 ></my-code>
+
+                <h4 style="margin-bottom:0;">Nombre retourné par votre requête AJAX:</h4>
+                <my-code
+                  label="Nombre"
+                  value="{{myAnswers.ajaxResponse}}"
+                ></my-code>
+                <!--
                 <paper-button raised>
                   <iron-icon icon="touch-app"></iron-icon>Executer
                 </paper-button>
-                <paper-button raised>
-                  <iron-icon icon="assignment-turned-in"></iron-icon>Rendre votre solution
+                -->
+                <paper-button raised on-click="executer" style="margin-top:20px;">
+                  <iron-icon icon="assignment-turned-in"></iron-icon>
+                  Rendre votre solution
                 </paper-button>
               </paper-material>
 
+              <!--
               <script id="testScriptContainer"></script>
+              -->
 
             </section>
-
-            <!--
-            <section data-route="submit">
-              <paper-material elevation="1">
-                <h2>Soumission</h2>
-                <p>Pour soumettre votre copie, envoyez un email à l'enseignant en suivant attentivement les étapes ci-dessous.</p>
-                <p>Pour éviter toute erreur, il est conseillé d'effectuer des copier-coller.</p>
-
-                <h3>Sujet de l'email:</h3>
-                <paper-material elevation="1">
-                  <p style="font-family: monospace; margin: 0;">TP I DATA</p>
-                </paper-material>
-
-                <h3>Contenu de l'email:</h3>
-                <paper-material elevation="1">
-                  <p style="font-family: monospace; margin: 0;">{{hashedAnswers}}</p>
-                </paper-material>
-
-                <p>Note: Ci-dessus, vous devriez reconnaitre une version compactée de vos réponses. Si ce n'est pas le cas, gardez une copie de vos réponses en dehors de cette fenêtre, rafraichissez la page, puis essayez à nouveau.</p>
-
-              </paper-material>
-            </section>
-            -->
 
           </iron-pages>
         </div>
@@ -243,9 +233,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="scripts/app.js"></script>
   <!-- endbuild-->
 
-  <!--
   <script src="scripts/exercises.js"></script>
-  -->
 
 </body>
 
