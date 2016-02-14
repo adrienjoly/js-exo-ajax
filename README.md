@@ -14,3 +14,4 @@ TODO
 ### TODO
 
 - Use [partials example](https://github.com/visionmedia/page.js/tree/master/examples/partials) for loading pages from external HTML files, instead of putting all content in index.html ?
+- Check if students that attempt to login are part of the current class.
