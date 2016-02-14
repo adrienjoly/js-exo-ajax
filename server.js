@@ -15,31 +15,37 @@ var GDRIVE_AUTH = {
   keyFile: "google-drive-key.pem"
 };
 
-function logRequest(cookie, body) {
+var GSHEET_LOGINS = '1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA'; // => https://docs.google.com/spreadsheets/d/1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA/edit#gid=0
+var GSHEET_REQUESTS = '1IGwxMLqlKmpjVPkuB8dPAzWMhEuRSb7cK1J6nnbbjIM';
+var GSHEET_SOLUTIONS = '1rNft7ZoT-8ie1dDm-eMJBX_28Knc4VpOXuSNCfw6nJw'; // => https://docs.google.com/spreadsheets/d/1rNft7ZoT-8ie1dDm-eMJBX_28Knc4VpOXuSNCfw6nJw/edit#gid=0
+
+function logToSheet(fileId, rowObj, cb) {
   var spreadsheet = Spreadsheet({
     auth: GDRIVE_AUTH,
-    fileId: "1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA" // => https://docs.google.com/spreadsheets/d/1W6oU4uEQycH9O5UXSmwzRp4j9Wr7IHueoNBEM6porNA/edit#gid=0
+    fileId: fileId // => https://docs.google.com/spreadsheets/d/<<fileId>>/edit#gid=0
   });
+  rowObj.timestamp = new Date();
   // append new row
-  spreadsheet.add({
-    timestamp: new Date(),
-    cookie: cookie,
-    body: body
-  }, function(err, res){
+  spreadsheet.add(rowObj, cb || function(err, res){
     if (err) {
-      console.error('storeLogin error:', err);
+      console.error('logToSheet error:', err);
     }
   });
 }
 
+function logLoginTest(cookie, body) {
+  logToSheet(GSHEET_LOGINS, {
+    cookie: cookie,
+    body: body
+  }, cb);
+}
+
+function logApiRequest(rowObj, cb) {
+  logToSheet(GSHEET_REQUESTS, rowObj, cb);
+}
+
 function logSolution(cookie, body, cb) {
-  var spreadsheet = Spreadsheet({
-    auth: GDRIVE_AUTH,
-    fileId: "1rNft7ZoT-8ie1dDm-eMJBX_28Knc4VpOXuSNCfw6nJw" // => https://docs.google.com/spreadsheets/d/1rNft7ZoT-8ie1dDm-eMJBX_28Knc4VpOXuSNCfw6nJw/edit#gid=0
-  });
-  // append new row
-  spreadsheet.add({
-    timestamp: new Date(),
+  logToSheet(GSHEET_SOLUTIONS, {
     cookie: cookie,
     answer: body.ajaxResponse,
     js: body.jsCode
@@ -74,8 +80,8 @@ var io = socketio(httpServer);
 // POST API endpoint used to test connection with server before accessing the exercise
 app.use('/test', function (req, response, next) {
   var cookie = (req.cookies || {}).studentid;
-  console.log('POST /test from:', req.connection.remoteAddress, cookie, req.body);
-  logRequest(cookie, typeof req.body == "object" ? JSON.stringify(req.body) : req.body);
+  console.log('POST /test from:', req.connection.remoteAddress /*, cookie, req.body*/);
+  logLoginTest(cookie, typeof req.body == "object" ? JSON.stringify(req.body) : req.body);
   var result = {
     hasCookie: !!cookie,
     hasBody: req.body && req.body.test
@@ -85,7 +91,65 @@ app.use('/test', function (req, response, next) {
   //io.emit('chat', { message: req.body.message, ip: req.connection.remoteAddress });
 });
 
-// POST API endpoint used to test connection with server before accessing the exercise
+// http://stackoverflow.com/questions/6122571/simple-non-secure-hash-function-for-javascript
+function hashCode(str){
+  var hash = 0;
+  if (str.length == 0) return hash;
+  for (i = 0; i < str.length; i++) {
+    char = str.charCodeAt(i);
+    hash = ((hash<<5)-hash)+char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return hash;
+}
+
+/*
+function HttpError(message, code) {
+  this.name = 'HttpError';
+  this.message = message;
+  this.code = code;
+}
+HttpError.prototype = Object.create(Error.prototype);
+HttpError.prototype.constructor = HttpError;
+*/
+
+// POST API endpoint used by student, according to exercise
+app.use('/api', function (req, response, next) {
+  var cookie = (req.cookies || {}).studentid;
+  console.log(req.method, req.url, 'from:', req.connection.remoteAddress);
+  var nombre = hashCode((req.body || {}).email || '') || 777;
+  logApiRequest({
+    addr: req.connection.remoteAddress,
+    method: req.method,
+    ok: (req.body || {}).ok,
+    email: (req.body || {}).email,
+    cookie: cookie,
+    expectednumber: nombre
+  });
+  //cookie = cookie ? JSON.parse(cookie) : [];
+  try {
+    console.info('cookie:', cookie);
+    console.info('body:', typeof req.body, req.body);
+    if (req.method.toUpperCase() != 'POST') throw Error('méthode non acceptée'); //, 405);
+    if (typeof req.body != 'object') throw Error('le contenu n\'est pas en JSON');
+    if (req.body.ok != 1) throw Error('la propriété ok du contenu doit valoir 1');
+    if (!req.body.email) throw Error('propriété email non trouvée');
+    //if (req.body.email.toLowerCase() != cookie[2]) throw Error('la propriété email doit contenir votre adresse email'); // fonctionne seulement si executé depuis le site d'examen
+    response.end(JSON.stringify({
+      nombre: nombre,
+      message: 'bravo! votre requête fonctionne bien!'
+    }));
+  } catch (e) {
+    console.error('error:', e.message/*, e.stack*/);
+    response.statusCode = /*e.code ||*/ 400;
+    response.end(JSON.stringify({
+      nombre: nombre,
+      message: e.message
+    }));
+  }
+});
+
+// POST API endpoint used to submit student's solutions
 app.use('/submit', function (req, response, next) {
   var cookie = (req.cookies || {}).studentid;
   console.log(req.method, req.url, 'from:', req.connection.remoteAddress);
