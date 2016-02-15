@@ -8,6 +8,12 @@ var serveStatic = require('serve-static');
 var cookieParser = require('cookie-parser');
 var Spreadsheet = require('google-spreadsheet-append-es5');
 
+// group 1: ok=1, nombre=777
+// group 3: ok=5, nombre=444
+
+var EXPECTED_OK_VALUE = 5;
+var DEFAULT_NOMBRE = 444;
+
 var PORT = process.env.PORT || 8080;
 
 var GDRIVE_AUTH = {
@@ -117,7 +123,7 @@ HttpError.prototype.constructor = HttpError;
 app.use('/api', function (req, response, next) {
   var cookie = (req.cookies || {}).studentid;
   console.log(req.method, req.url, 'from:', req.connection.remoteAddress);
-  var nombre = hashCode((req.body || {}).email || '') || 777;
+  var nombre = hashCode((req.body || {}).email || '') || DEFAULT_NOMBRE;
   logApiRequest({
     addr: req.connection.remoteAddress,
     method: req.method,
@@ -132,7 +138,7 @@ app.use('/api', function (req, response, next) {
     console.info('body:', typeof req.body, req.body);
     if (req.method.toUpperCase() != 'POST') throw Error('méthode non acceptée'); //, 405);
     if (typeof req.body != 'object') throw Error('le contenu n\'est pas en JSON');
-    if (req.body.ok != 1) throw Error('la propriété ok du contenu doit valoir 1');
+    if (req.body.ok != EXPECTED_OK_VALUE) throw Error('la propriété ok du contenu doit valoir ' + EXPECTED_OK_VALUE);
     if (!req.body.email) throw Error('propriété email non trouvée');
     //if (req.body.email.toLowerCase() != cookie[2]) throw Error('la propriété email doit contenir votre adresse email'); // fonctionne seulement si executé depuis le site d'examen
     response.end(JSON.stringify({
