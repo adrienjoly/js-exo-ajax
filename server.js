@@ -10,9 +10,10 @@ var Spreadsheet = require('google-spreadsheet-append-es5');
 
 // group 1: ok=1, nombre=777
 // group 3: ok=5, nombre=444
+// group 2: ok=9, nombre=111
 
-var EXPECTED_OK_VALUE = 5;
-var DEFAULT_NOMBRE = 444;
+var EXPECTED_OK_VALUE = 9;
+var DEFAULT_NOMBRE = 111;
 
 var PORT = process.env.PORT || 8080;
 
