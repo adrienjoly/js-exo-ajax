@@ -33,7 +33,7 @@ function logToSheet(fileId, rowObj, cb) {
   });
 }
 
-function logLoginTest(cookie, body) {
+function logLoginTest(cookie, body, cb) {
   logToSheet(GSHEET_LOGINS, {
     cookie: cookie,
     body: body
