@@ -1,0 +1,174 @@
+timestamp,cookie,answer,js,,,,
+Mon Feb 15 2016 09:17:25 GMT+0000 (UTC),"[""103769591752335079590"",""Adrien JOLY"",""adrien.joly@eemi.com""]",-179242286,"var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  console.log('student-req-status', xhr.readyState, xhr.status, xhr.responseText);
+  if (xhr.readyState == 4) {
+    alert(xhr.status + ' ' + xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email:'adrien.joly@eemi.com' }));
+",,,,
+Mon Feb 15 2016 10:34:37 GMT+0000 (UTC),"[""111413917136628350156"",""Caroline AUCLAIR"",""caroline.auclair@eemi.com""]",,,,,,
+Mon Feb 15 2016 10:36:51 GMT+0000 (UTC),"[""112981518204327775681"",""Antoine BLOT"",""antoine.blot@eemi.com""]",,,,,,
+Mon Feb 15 2016 10:36:51 GMT+0000 (UTC),"[""109254081457830462271"",""Aurele CHRIST"",""aurele.christ@eemi.com""]",1,"var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 
+'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    var result = JSON.parse('aurele.christ@eemi.com' );
+    var ok = JSON.parse('1')
+    alert(result.ok);
+  }
+};
+xhr.send(null);
+   ",,,,
+Mon Feb 15 2016 10:37:29 GMT+0000 (UTC),"[""103037102019133748890"",""Valentin BERNARD"",""valentin.bernard@eemi.com""]",,xhr.send(JSON.stringify({ message: 'bonjour!' }));,,,,
+Mon Feb 15 2016 10:37:35 GMT+0000 (UTC),"[""103037102019133748890"",""Valentin BERNARD"",""valentin.bernard@eemi.com""]",,xhr.send(JSON.stringify({ message: 'bonjour!' }));,,,,
+Mon Feb 15 2016 10:37:40 GMT+0000 (UTC),"[""105264193742863490620"",""Sarah COHEN"",""sarah.cohen@eemi.com""]",,,,,,
+Mon Feb 15 2016 10:37:42 GMT+0000 (UTC),"[""107661820303365152078"",""Remi ALVAREZ-FRANCO"",""remi.alvarez-franco@eemi.com""]",,document.getElementById('truc').innerHTML = .responseText;,,,,
+Mon Feb 15 2016 10:37:45 GMT+0000 (UTC),"[""106518625043392065922"",""Alicia DJAFFAR"",""alicia.djaffar@eemi.com""]",777,"var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://jsonplaceholder.typicode.com/users/1');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   var result = JSON.parse(xhr.responseText);
+   alert(result.name);
+ }
+};
+xhr.send(777);",,,,
+Mon Feb 15 2016 10:37:47 GMT+0000 (UTC),"[""116372307368767833451"",""Adrien JOURDIER"",""adrien.jourdier@eemi.com""]",," var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   alert(xhr.responseText);
+ }
+};
+
+var mail = 'adrien.jourdier@eemi.com';
+var ok = 1;
+
+xhr.send('mail, ok');",,,,
+Mon Feb 15 2016 10:37:52 GMT+0000 (UTC),"[""106518625043392065922"",""Alicia DJAFFAR"",""alicia.djaffar@eemi.com""]",777,"var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://jsonplaceholder.typicode.com/users/1');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   var result = JSON.parse(xhr.responseText);
+   alert(result.name);
+ }
+};
+xhr.send(777);",,,,
+Mon Feb 15 2016 10:37:53 GMT+0000 (UTC),"[""115861581274490603829"",""Samy ANNOUN"",""samy.announ@eemi.com""]",,"var textejson = '{""ok"" : 1, ""url"":""https://js-exo-ajax.herokuapp.com/api""}'
+var objet = mail('(+samy.announ@eemi.com+)');
+console.log(objet)
+",,,,
+Mon Feb 15 2016 10:37:54 GMT+0000 (UTC),"[""117441267682820388698"",""Paul RAY"",""paul.ray@eemi.com""]",,,,,,
+Mon Feb 15 2016 10:37:58 GMT+0000 (UTC),"[""100833687235566341431"",""Nina PELLAN"",""nina.pellan@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://js-exo-ajax.herokuapp.com/api/users/1');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {",,,,
+Mon Feb 15 2016 10:38:01 GMT+0000 (UTC),"[""103631253150006969014"",""Laurent MAXIMIN"",""laurent.maximin@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   alert(xhr.responseText);
+ }
+};
+xhr.send('JSON.stringify('laurent.maximin@eemi.com')');",,,,
+Mon Feb 15 2016 10:38:04 GMT+0000 (UTC),"[""108003350025924655784"",""Savinien MAIRE"",""savinien.maire@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   
+   var contenu = JSON.stringify({""ok"":1,""email"":""savinien.maire@gmail.com""});
+   
+ }
+};
+xhr.send(contenu);
+",,,,
+Mon Feb 15 2016 10:38:06 GMT+0000 (UTC),"[""111457311246491113843"",""Tess TILMONT"",""tess.tilmont@eemi.com""]",-580122195,"      document.getElementById('mon-bouton').onclick = function(event) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            alert(xhr.responseText);
+          }
+        };
+        xhr.send(JSON.stringify({ ok: ""1"" , email: ""tess.tilmont@eemi.com""}));
+      };
+    ",,,,
+Mon Feb 15 2016 10:38:08 GMT+0000 (UTC),"[""111985103003524504993"",""Laura BOUKOBZA"",""laura.boukobza@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 1 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');
+",,,,
+Mon Feb 15 2016 10:38:19 GMT+0000 (UTC),"[""108905198213282127834"",""Christopher AMEGA"",""christopher.amega@eemi.com""]",,"<script> 
+
+       var xhr = new XMLHttpRequest();
+       xhr.open('POST');
+       xhr.onreadystatechange = function() {
+
+</script>
+",,,,
+Mon Feb 15 2016 10:38:32 GMT+0000 (UTC),"[""100839646955107672412"",""Jean BARBIER"",""jean.barbier@eemi.com""]",1,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 1 && (xhr.status == 200 || xhr.status == 0)) {
+ 
+ var.contenue= Json",,,,
+Mon Feb 15 2016 10:38:33 GMT+0000 (UTC),"[""114981914867023607521"",""Simon CHOTARD"",""simon.chotard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() 
+      
+            if (xhr.readyState, xhr.status, xhr.responseText) {
+        var ok = 1
+        xhr.send('simon.chotard@eemi.com');
+      };
+",,,,
+Mon Feb 15 2016 10:38:51 GMT+0000 (UTC),"[""108905198213282127834"",""Christopher AMEGA"",""christopher.amega@eemi.com""]",777,"<script> 
+
+       var xhr = new XMLHttpRequest();
+       xhr.open('POST');
+       xhr.onreadystatechange = function() {
+
+</script>
+",,,,
+Mon Feb 15 2016 10:39:06 GMT+0000 (UTC),"[""114981914867023607521"",""Simon CHOTARD"",""simon.chotard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() 
+      
+            if (xhr.readyState, xhr.status, xhr.responseText) {
+        var ok = 1
+        xhr.send('simon.chotard@eemi.com');
+      };
+",,,,
+Mon Feb 15 2016 10:39:11 GMT+0000 (UTC),"[""103631253150006969014"",""Laurent MAXIMIN"",""laurent.maximin@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   JSON.parse(xhr.responseText);
+ }
+};
+xhr.send('JSON.stringify('laurent.maximin@eemi.com')');",,,,
+Mon Feb 15 2016 10:39:11 GMT+0000 (UTC),"[""112837382688102224023"",""Rodrigue COAIL"",""rodrigue.coail@eemi.com""]",91582901,"	  <script>
+	  var x = document.getElementById('email');
+      document.getElementById('form').onsubmit = function(event) {
+              var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api');
+        xhr.onreadystatechange = function() {
+          console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+
+            if (xhr.status == 200 || xhr.status == 0) {
+              x.value = '';
+              x.focus();
+            } else {
+              alert('error ' + xhr.status);
+            }
+          }
+        };
+        xhr.send(JSON.stringify({ email: x.value }));
+      };
+	  </script>",,,,"entré à la main, suite à envoi de mail causé par serveur stoppé"

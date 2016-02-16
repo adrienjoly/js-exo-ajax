@@ -1,0 +1,342 @@
+timestamp,cookie,answer,js,,,,
+Mon Feb 15 2016 15:46:07 GMT+0000 (UTC),"[""116179280031821926883"",""Kévin WU"",""kevin.wu@eemi.com""]","xhr.onreadystatechange = function()
+{
+ // instructions de traitement de la réponse
+};
+
+if (xhr.readyState == 4) 
+{ 
+// Reçu, OK  
+}
+else
+{ 
+// Attendre...
+}","if (window.XMLHttpRequest)    //  Objet standard
+{ 
+    xhr = new XMLHttpRequest();     //  Firefox, Safari, ...
+} 
+else  if (window.ActiveXObject)      //  Internet Explorer
+{
+    xhr = new ActiveXObject(""Microsoft.XMLHTTP"");
+}",,,,
+Mon Feb 15 2016 15:46:07 GMT+0000 (UTC),"[""110625963267758945150"",""Romane CHAOULOFF"",""romane.chaouloff@eemi.com""]",,,,,,
+Mon Feb 15 2016 15:46:09 GMT+0000 (UTC),"[""116679982480752457552"",""Adrien REGNAULT DE MONTGON"",""adrien.regnaultdemontgon@eemi.com""]",,,,,,
+Mon Feb 15 2016 15:46:50 GMT+0000 (UTC),"[""115173112075180731014"",""Alexandre EVRARD"",""alexandre.evrard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 9,email: ('alexandre.evrard@eemi.com') });",,,,
+Mon Feb 15 2016 15:46:56 GMT+0000 (UTC),"[""108194736825106247098"",""Timothée PODGUSZER"",""timothee.podguszer@eemi.com""]",,,,,,
+Mon Feb 15 2016 15:46:58 GMT+0000 (UTC),"[""103874377118893126548"",""Julien BOUDEVILLE"",""julien.boudeville@eemi.com""]",,"
+var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+
+  }
+};
+xhr.send(null);",,,,
+Mon Feb 15 2016 15:47:00 GMT+0000 (UTC),"[""103659140839603503174"",""Léon LAPOTRE"",""leon.lapotre@eemi.com""]",,,,,,
+Mon Feb 15 2016 15:47:02 GMT+0000 (UTC),"[""110014628040879105032"",""Salome CHICHE"",""salome.chiche@eemi.com""]",,"$.post(
+    'send_mail.php', // Le fichier cible côté serveur.
+    {
+        sujet : $(""#sujet"").val(); // Nous supposons que ce formulaire existe dans le DOM.
+        contenu : $(""#contenu"").val();
+    },
+    'nom_fonction_retour', // Nous renseignons uniquement le nom de la fonction de retour.
+    'text' // Format des données reçues.
+);
+
+function nom_fonction_retour(texte_recu){
+    // Du code pour gérer le retour de l'appel AJAX.
+}
+",,,,
+Mon Feb 15 2016 15:47:03 GMT+0000 (UTC),"[""103874377118893126548"",""Julien BOUDEVILLE"",""julien.boudeville@eemi.com""]",,"
+var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+
+  }
+};
+xhr.send(null);",,,,
+Mon Feb 15 2016 15:47:11 GMT+0000 (UTC),"[""106260878910256496020"",""Charles GUIGNARD"",""charles.guignard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+Mon Feb 15 2016 15:47:13 GMT+0000 (UTC),"[""102147722742332758287"",""Briac SUQUET"",""briac.suquet@eemi.com""]",111,"<form method=""POST"" action=""/tweet"">
+  <input name=""message"">
+</form>
+var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.send(JSON.stringify({ ok: '9' }));
+xhr.send(JSON.stringify({ email: 'briac.suquet@eemi.com' }));",,,,
+Mon Feb 15 2016 15:47:13 GMT+0000 (UTC),"[""100212266235788964177"",""Norman VILLARET"",""norman.villaret@eemi.com""]",1,"$.ajax({
+  url: ""https://js-exo-ajax.herokuapp.com/api"",
+  context: document.body
+}).done(function() {
+  $( this ).addClass( ""done"" );
+});",,,,
+Mon Feb 15 2016 15:47:14 GMT+0000 (UTC),"[""103874377118893126548"",""Julien BOUDEVILLE"",""julien.boudeville@eemi.com""]",,"
+var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+
+  }
+};
+xhr.send(null);",,,,
+Mon Feb 15 2016 15:47:16 GMT+0000 (UTC),"[""106260878910256496020"",""Charles GUIGNARD"",""charles.guignard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+Mon Feb 15 2016 15:47:21 GMT+0000 (UTC),"[""105686855929419458563"",""Hadrien BAUVILLE"",""hadrien.bauville@eemi.com""]",9,"<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Exo</title>
+</head>
+<body>
+  <a href=""#"" onclick=""fetchCustomer();"" id='ajax-button'>Test Ajax</a>
+  <div id='customer'></div>
+
+  <script type=""text/javascript"">
+
+    function fetchCustomer() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://js-exo-ajax.herokuapp.com/api');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 0) {
+          console.log(""request not initialized"");
+        } else if (xhr.readyState == 9) {
+         
+          var obj = JSON.parse(xhr.responseText);
+          alert{obj['address']['street']} ;
+        }
+   
+   
+    }
+
+  </script>
+</body>
+</html>",,,,
+Mon Feb 15 2016 15:47:28 GMT+0000 (UTC),"[""106016122078624523322"",""Marine BOURGEOIS"",""marine.bourgeois@eemi.com""]",,"document.getElementById('form').onsubmit = function(){
+event.preventDefault();
+}
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: '9' }));;
+xhr.send(JSON.stringify({ email: 'marine.bourgeois@eemi.com' }));;
+event.preventDefault();
+</script>",,,,
+Mon Feb 15 2016 15:47:32 GMT+0000 (UTC),"[""102147722742332758287"",""Briac SUQUET"",""briac.suquet@eemi.com""]",111,"<form method=""POST"" action=""/tweet"">
+  <input name=""message"">
+</form>
+var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.send(JSON.stringify({ ok: '9' }));
+xhr.send(JSON.stringify({ email: 'briac.suquet@eemi.com' }));",,,,
+Mon Feb 15 2016 15:47:37 GMT+0000 (UTC),"[""105686855929419458563"",""Hadrien BAUVILLE"",""hadrien.bauville@eemi.com""]",9,"<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Exo</title>
+</head>
+<body>
+  <a href=""#"" onclick=""fetchCustomer();"" id='ajax-button'>Test Ajax</a>
+  <div id='customer'></div>
+
+  <script type=""text/javascript"">
+
+    function fetchCustomer() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://js-exo-ajax.herokuapp.com/api');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 0) {
+          console.log(""request not initialized"");
+        } else if (xhr.readyState == 9) {
+         
+          var obj = JSON.parse(xhr.responseText);
+          alert{obj['address']['street']} ;
+        }
+   
+   
+    }
+
+  </script>
+</body>
+</html>",,,,
+Mon Feb 15 2016 15:47:42 GMT+0000 (UTC),"[""102147722742332758287"",""Briac SUQUET"",""briac.suquet@eemi.com""]",111,"var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.send(JSON.stringify({ ok: '9' }));
+xhr.send(JSON.stringify({ email: 'briac.suquet@eemi.com' }));",,,,
+Mon Feb 15 2016 15:47:45 GMT+0000 (UTC),"[""110094529371235135290"",""guillaume AMORTILA"",""guillaume.amortila@eemi.com""]",111,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: '9' , email: ‘guillaume.amortila@eemi.com’}));",,,,
+Mon Feb 15 2016 15:47:46 GMT+0000 (UTC),"[""114347809722429019984"",""Laurène LODTER"",""laurene.lodter@eemi.com""]",9,"var xhr = new XMLHttpRequest(); 
+xhr.open('POST', ' https://js-exo-ajax.herokuapp.com/api');
+xhr.ok = function() {
+  if (xhr.ok == 9 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.email);
+  }
+};
+xhr.send('laurene.lodter@gmail.com');",,,,
+Mon Feb 15 2016 15:47:46 GMT+0000 (UTC),"[""110014628040879105032"",""Salome CHICHE"",""salome.chiche@eemi.com""]",,"$.post(
+    'send_mail.php', // Le fichier cible côté serveur.
+    {
+        sujet : $(""#sujet"").val(); // Nous supposons que ce formulaire existe dans le DOM.
+        contenu : $(""#contenu"").val();
+    },
+    'nom_fonction_retour', // Nous renseignons uniquement le nom de la fonction de retour.
+    'text' // Format des données reçues.
+);
+
+function nom_fonction_retour(texte_recu){
+    // Du code pour gérer le retour de l'appel AJAX.
+}
+",,,,
+Mon Feb 15 2016 15:47:48 GMT+0000 (UTC),"[""107172046548987188834"",""Arnaud MANARANCHE"",""arnaud.manaranche@eemi.com""]",111,"  var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+  var obj = JSON.parse(xhr.responseText);
+  document.getElementById('api').innerHTML = obj ['nombre'];
+}
+};
+xhr.send(null);
+}",,,,
+Mon Feb 15 2016 15:47:49 GMT+0000 (UTC),"[""115196211086729181863"",""Victor DE LA FOUCHARDIERE"",""victor.delafouchardiere@eemi.com""]",,"function test() 
+        {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'http://js-exo-ajax.herokuapp.com/api');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 0) {
+        }  else if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+          var obj = JSON.parse(xhr.responseText);
+          document.getElementById('ok').innerHTML = obj['nombre'];
+          document.getElementById('email').inner HTML = obj['message'];
+        }
+      };
+      xhr.send(null);
+    }",,,,
+Mon Feb 15 2016 15:47:50 GMT+0000 (UTC),"[""100322773186257825155"",""Fabien SCHNEITER"",""fabien.schneiter@eemi.com""]",111,"  <script type=""text/javascript"">
+
+    function fetchCustomer() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(email);
+  }
+};
+xhr.send('données à envoyer');
+    }
+
+  </script>",,,,
+Mon Feb 15 2016 15:47:52 GMT+0000 (UTC),"[""107741489064753039193"",""Camille BOURNIER"",""camille.bournier@eemi.com""]",,"<script>
+var xhr = new XMLHttpRequest(); 
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 9 && (xhr.status == 200 || xhr.status == 0)) {
+    var result = JSON.parse(xhr.responseText);
+    alert(""ok"");
+  }
+};
+xhr.send(null);
+
+</script>",,,,
+Mon Feb 15 2016 15:47:54 GMT+0000 (UTC),"[""107172046548987188834"",""Arnaud MANARANCHE"",""arnaud.manaranche@eemi.com""]",111,"  var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+  var obj = JSON.parse(xhr.responseText);
+  document.getElementById('api').innerHTML = obj ['nombre'];
+}
+};
+xhr.send(null);
+}",,,,
+Mon Feb 15 2016 15:47:54 GMT+0000 (UTC),"[""107573928737735339074"",""Assila ZITOUNI"",""assila.zitouni@eemi.com""]",aucun retour,"function fetchCustomer() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', ' https://js-exo-ajax.herokuapp.com/api');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 0) {
+        }  else if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+          var obj = JSON.parse(xhr.responseText);
+          alert (obj['ok']['email']);
+        }
+      };
+xhr.send('adresse mail');
+    }",,,,
+Mon Feb 15 2016 15:47:54 GMT+0000 (UTC),"[""115173112075180731014"",""Alexandre EVRARD"",""alexandre.evrard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 9,email: ('alexandre.evrard@eemi.com') });",,,,
+Mon Feb 15 2016 15:47:55 GMT+0000 (UTC),"[""100322773186257825155"",""Fabien SCHNEITER"",""fabien.schneiter@eemi.com""]",111,"  <script type=""text/javascript"">
+
+    function fetchCustomer() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(email);
+  }
+};
+xhr.send('données à envoyer');
+    }
+
+  </script>",,,,
+Mon Feb 15 2016 15:47:57 GMT+0000 (UTC),"[""110625963267758945150"",""Romane CHAOULOFF"",""romane.chaouloff@eemi.com""]",,,,,,
+Mon Feb 15 2016 15:47:58 GMT+0000 (UTC),"[""106016122078624523322"",""Marine BOURGEOIS"",""marine.bourgeois@eemi.com""]",,"document.getElementById('form').onsubmit = function(){
+event.preventDefault();
+}
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: '9' }));;
+xhr.send(JSON.stringify({ email: 'marine.bourgeois@eemi.com' }));;
+event.preventDefault();
+</script>",,,,
+Mon Feb 15 2016 15:47:59 GMT+0000 (UTC),"[""110014628040879105032"",""Salome CHICHE"",""salome.chiche@eemi.com""]",,"$.post(
+    'send_mail.php', // Le fichier cible côté serveur.
+    {
+        sujet : $(""#sujet"").val(); // Nous supposons que ce formulaire existe dans le DOM.
+        contenu : $(""#contenu"").val();
+    },
+    'nom_fonction_retour', // Nous renseignons uniquement le nom de la fonction de retour.
+    'text' // Format des données reçues.
+);
+
+function nom_fonction_retour(texte_recu){
+    // Du code pour gérer le retour de l'appel AJAX.
+}
+",,,,
