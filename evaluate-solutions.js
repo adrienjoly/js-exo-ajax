@@ -48,7 +48,7 @@ function scoreStudent(sol, req) {
     hasReq && req.method == 'POST',
     hasReq && req.okValue == EXPECTED_OK_VALUE,
     hasReq && req.emailValue == req.cookie[EMAIL_IN_COOKIE],
-    sol.answer == 777, // TODO: fix for each class
+    sol.answer == 777 || (hasReq && sol.answer == req.expectedNumber), // TODO: fix for each class
   ];
 }
 
@@ -121,6 +121,6 @@ function displayStudentsWithRequest(group) {
   });
 }
 
-displayStudentsWithRequest(1); // => 8 requests / 20 solutions => avg: 0.85
-displayStudentsWithRequest(2); // => 14 requests / 20 solutions => avg: 0.75 (with wrong expected answer)
-displayStudentsWithRequest(3); // => 15 students / 18 solutions => avg: 0.94 (with wrong expected answer)
+displayStudentsWithRequest(1); // => 8 requests / 20 solutions => avg: 0.85 => 0.95
+displayStudentsWithRequest(2); // => 14 requests / 20 solutions => avg: 0.75 => 0.95 (with wrong expected answer)
+displayStudentsWithRequest(3); // => 15 students / 18 solutions => avg: 0.94 => 1.27 (with wrong expected answer)
