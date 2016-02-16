@@ -5,6 +5,7 @@
   "scripts": {
     "postinstall": "cd public; ../node_modules/bower/bin/bower install; cd ..",
     "test": "curl localhost:8080/test -d '{\"message\":\"bonjour\"}' --cookie \"studentid=test\"",
+    "eval": "node evaluate-solutions.js",
     "deploy": "git push heroku",
     "start": "node server.js"
   },
@@ -18,5 +19,8 @@
     "google-spreadsheet-append-es5": "0.0.5",
     "serve-static": "^1.10.2",
     "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "basic-csv": "0.0.2"
   }
 }
