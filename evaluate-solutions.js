@@ -40,20 +40,25 @@ function scoreRequest(req) {
 }
 */
 
-function displayStudentsWithRequest(filename) {
-  basicCSV.readCSV(filename, {
-    dropHeader: true
-  }, function (error, rows) {
-    var studentReq = {};
-    rows.forEach(function(row) {
-      var req = parseRequest(row);
-      if (req.studentEmail)
-        studentReq[req.studentEmail] = req;
-    });
-    console.log(Object.keys(studentReq), Object.keys(studentReq).length);
+function indexStudentsLastRequest(requests) {
+  var studentReq = {};
+  requests.forEach(function(req) {
+    if (req.studentEmail)
+      studentReq[req.studentEmail] = req;
+  });
+  return studentReq;
+}
+
+function displayStudentsWithRequest(group) {
+  var path = './solutions/';
+  var csvOptions = { dropHeader: true }
+  basicCSV.readCSV(path + 'requests-group' + group + '.csv', csvOptions, function(err, rows) {
+    if (err) throw err;
+    var studentReq = indexStudentsLastRequest(rows.map(parseRequest));
+    console.log('group', group, 'student requests:', Object.keys(studentReq).length);
   });
 }
 
-//displayStudentsWithRequest("./solutions/requests-group1.csv"); // => 8 students (2 could not participate)
-//displayStudentsWithRequest("./solutions/requests-group2.csv"); // => 14 students
-//displayStudentsWithRequest("./solutions/requests-group3.csv"); // => 15 students
+displayStudentsWithRequest(1); // => 8 students (2 could not participate)
+displayStudentsWithRequest(2); // => 14 students
+displayStudentsWithRequest(3); // => 15 students
