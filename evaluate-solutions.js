@@ -40,19 +40,17 @@ function parseSolution(row) {
   };
 }
 
-/*
 var EXPECTED_OK_VALUE = 1; // for group 1 only
-
-function scoreRequest(req) {
+function scoreStudent(sol, req) {
+  var hasReq = !!req;
   return [
-    1, // 1 point for having succeeded a HTTP request on the right URL
-    req.method == 'POST',
-    req.okValue == EXPECTED_OK_VALUE,
-    req.emailValue == req.cookie[EMAIL_IN_COOKIE],
-    // req. // TODO
-  ]
+    hasReq, // 1 point for having succeeded a HTTP request on the right URL
+    hasReq && req.method == 'POST',
+    hasReq && req.okValue == EXPECTED_OK_VALUE,
+    hasReq && req.emailValue == req.cookie[EMAIL_IN_COOKIE],
+    sol.answer == 777, // TODO: fix for each class
+  ];
 }
-*/
 
 function indexLastByEmail(requests) {
   var studentReq = {};
@@ -77,7 +75,34 @@ function indexSolutions(filename, cb) {
   });  
 }
 
+function toBinary(v) {
+  return v ? 1 : 0;
+}
+
+function sum(a, b) {
+  return a + b;
+}
+
+function GroupEvaluator(initialSumArray) {
+  var nbStudents = 0;
+  var pointsSum = initialSumArray;
+  return {
+    feedStudentPoints: function(array) {
+      pointsSum = pointsSum.map(function(pointSum, i) {
+        return pointSum + array[i];
+      });
+      ++nbStudents;
+    },
+    getMeanArray: function() {
+      return pointsSum.map(function(pointSum) {
+        return pointSum / nbStudents;
+      });
+    }
+  }
+}
+
 function displayStudentsWithRequest(group) {
+  var groupEval = GroupEvaluator([0,0,0,0,0]);
   var path = './solutions/';
   indexRequests(path + 'requests-group' + group + '.csv', function(err, studentReq) {
     if (err) throw err;
@@ -85,10 +110,17 @@ function displayStudentsWithRequest(group) {
       if (err) throw err;
       console.log('group', group, 'student requests:', Object.keys(studentReq).length);
       console.log('group', group, 'student solutions:', Object.keys(studentSol).length);
+      for (var email in studentSol) {
+        var points = scoreStudent(studentSol[email], studentReq[email]).map(toBinary);
+        groupEval.feedStudentPoints(points);
+        //console.log(points, points.reduce(sum), email);
+      }
+      var meanArray = groupEval.getMeanArray()
+      console.log('group', group, 'average:', meanArray, meanArray.reduce(sum));
     });
   });
 }
 
-displayStudentsWithRequest(1); // => 8 students (2 could not participate)
-//displayStudentsWithRequest(2); // => 14 students
-//displayStudentsWithRequest(3); // => 15 students
+displayStudentsWithRequest(1); // => 8 requests / 20 solutions => avg: 0.85
+displayStudentsWithRequest(2); // => 14 requests / 20 solutions => avg: 0.75 (with wrong expected answer)
+displayStudentsWithRequest(3); // => 15 students / 18 solutions => avg: 0.94 (with wrong expected answer)
