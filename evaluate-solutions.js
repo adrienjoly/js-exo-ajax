@@ -40,16 +40,17 @@ function parseSolution(row) {
   };
 }
 
-var EXPECTED_OK_VALUE = 1; // for group 1 only
-function scoreStudent(sol, req) {
-  var hasReq = !!req;
-  return [
-    hasReq, // 1 point for having succeeded a HTTP request on the right URL
-    hasReq && req.method == 'POST',
-    hasReq && req.okValue == EXPECTED_OK_VALUE,
-    hasReq && req.emailValue == req.cookie[EMAIL_IN_COOKIE],
-    sol.answer == 777 || (hasReq && sol.answer == req.expectedNumber), // TODO: fix for each class
-  ];
+function makeStudentEvaluator(expectedOkValue, defaultAnswer) {
+  return function scoreStudent(sol, req) {
+    var hasReq = !!req;
+    return [
+      hasReq, // 1 point for having succeeded a HTTP request on the right URL
+      hasReq && req.method == 'POST',
+      hasReq && req.okValue == expectedOkValue,
+      hasReq && req.emailValue == req.cookie[EMAIL_IN_COOKIE],
+      sol.answer == defaultAnswer || (hasReq && sol.answer == req.expectedNumber),
+    ];
+  }
 }
 
 function indexLastByEmail(requests) {
@@ -101,7 +102,7 @@ function GroupEvaluator(initialSumArray) {
   }
 }
 
-function displayStudentsWithRequest(group) {
+function displayStudentsWithRequest(group, scoreStudent) {
   var groupEval = GroupEvaluator([0,0,0,0,0]);
   var path = './solutions/';
   indexRequests(path + 'requests-group' + group + '.csv', function(err, studentReq) {
@@ -121,6 +122,8 @@ function displayStudentsWithRequest(group) {
   });
 }
 
-displayStudentsWithRequest(1); // => 8 requests / 20 solutions => avg: 0.85 => 0.95
-displayStudentsWithRequest(2); // => 14 requests / 20 solutions => avg: 0.75 => 0.95 (with wrong expected answer)
-displayStudentsWithRequest(3); // => 15 students / 18 solutions => avg: 0.94 => 1.27 (with wrong expected answer)
+displayStudentsWithRequest(1, makeStudentEvaluator(1, 777)); // => 8 requests / 20 solutions => avg: 0.85 => 0.95
+displayStudentsWithRequest(2, makeStudentEvaluator(5, 444)); // => 14 requests / 20 solutions => avg: 0.75 => 0.95
+displayStudentsWithRequest(3, makeStudentEvaluator(9, 111)); // => 15 students / 18 solutions => avg: 0.94 => 1.27
+
+// WARNING: per-group student evaluators don't change the marks! => check ok and answer values
