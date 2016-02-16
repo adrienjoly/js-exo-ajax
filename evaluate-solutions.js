@@ -87,12 +87,19 @@ function sum(a, b) {
 function GroupEvaluator(initialSumArray) {
   var nbStudents = 0;
   var pointsSum = initialSumArray;
+  var pointsMax = initialSumArray;
   return {
     feedStudentPoints: function(array) {
       pointsSum = pointsSum.map(function(pointSum, i) {
         return pointSum + array[i];
       });
+      pointsMax = pointsMax.map(function(pointMax, i) {
+        return Math.max(pointMax, array[i]);
+      });
       ++nbStudents;
+    },
+    getMaxArray: function() {
+      return pointsMax;
     },
     getMeanArray: function() {
       return pointsSum.map(function(pointSum) {
@@ -115,9 +122,13 @@ function displayStudentsWithRequest(group, scoreStudent) {
         var points = scoreStudent(studentSol[email], studentReq[email]).map(toBinary);
         groupEval.feedStudentPoints(points);
         //console.log(points, points.reduce(sum), email);
+        //console.log(email, studentSol[email].js);
+        //console.log((studentReq[email] || {}).okValue, email);
+        //console.log(studentSol[email].answer, email);
       }
       var meanArray = groupEval.getMeanArray()
-      console.log('group', group, 'average:', meanArray, meanArray.reduce(sum));
+      console.log('group', group, 'max:', groupEval.getMaxArray());
+      console.log('group', group, 'average:', meanArray, meanArray.reduce(sum), '\n');
     });
   });
 }
