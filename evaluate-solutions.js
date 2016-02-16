@@ -1,4 +1,5 @@
 var basicCSV = require('basic-csv');
+var csvOptions = { dropHeader: true };
 
 // fields
 var DATE = 0,
@@ -62,21 +63,32 @@ function indexLastByEmail(requests) {
   return studentReq;
 }
 
+function indexRequests(filename, cb) {
+  basicCSV.readCSV(filename, csvOptions, function(err, rows) {
+    if (err) return cb(err);
+    cb(null, indexLastByEmail(rows.map(parseRequest)));
+  });  
+}
+
+function indexSolutions(filename, cb) {
+  basicCSV.readCSV(filename, csvOptions, function(err, rows) {
+    if (err) return cb(err);
+    cb(null, indexLastByEmail(rows.map(parseSolution)));
+  });  
+}
+
 function displayStudentsWithRequest(group) {
   var path = './solutions/';
-  var csvOptions = { dropHeader: true }
-  basicCSV.readCSV(path + 'requests-group' + group + '.csv', csvOptions, function(err, rows) {
+  indexRequests(path + 'requests-group' + group + '.csv', function(err, studentReq) {
     if (err) throw err;
-    var studentReq = indexLastByEmail(rows.map(parseRequest));
-    console.log('group', group, 'student requests:', Object.keys(studentReq).length);
-    basicCSV.readCSV(path + 'solutions-group' + group + '.csv', csvOptions, function(err, rows) {
+    indexSolutions(path + 'solutions-group' + group + '.csv', function(err, studentSol) {
       if (err) throw err;
-      var studentSol = indexLastByEmail(rows.map(parseSolution));
+      console.log('group', group, 'student requests:', Object.keys(studentReq).length);
       console.log('group', group, 'student solutions:', Object.keys(studentSol).length);
     });
   });
 }
 
 displayStudentsWithRequest(1); // => 8 students (2 could not participate)
-displayStudentsWithRequest(2); // => 14 students
-displayStudentsWithRequest(3); // => 15 students
+//displayStudentsWithRequest(2); // => 14 students
+//displayStudentsWithRequest(3); // => 15 students
