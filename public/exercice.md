@@ -16,7 +16,7 @@ Votre requête AJAX doit être envoyée de la manière suivante:
 - URL de l'API: https://js-exo-ajax.herokuapp.com/api
 - méthode d'envoi: POST
 - Contenu: un objet JSON contenant deux propriétés:
-    - la propriété `ok` vaut `1` (le nombre)
+    - la propriété `ok` vaut `5` (le nombre)
     - la propriété `email` contient votre adresse email (chaîne de caractères)
 
 Vous pouvez faire autant de requêtes sur l'API que vous le souhaitez, dans la limite d'une par seconde maximum.

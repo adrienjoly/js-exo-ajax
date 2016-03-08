@@ -18,8 +18,8 @@ var Spreadsheet = require('google-spreadsheet-append-es5');
 // group 2: ok=5, nombre=333
 // group 1: ok=9, nombre=222
 
-var EXPECTED_OK_VALUE = 1;
-var DEFAULT_NOMBRE = 444;
+var EXPECTED_OK_VALUE = 5;
+var DEFAULT_NOMBRE = 333;
 
 var PORT = process.env.PORT || 8080;
 
