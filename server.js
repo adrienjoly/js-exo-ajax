@@ -8,12 +8,18 @@ var serveStatic = require('serve-static');
 var cookieParser = require('cookie-parser');
 var Spreadsheet = require('google-spreadsheet-append-es5');
 
+// february
 // group 1: ok=1, nombre=777
 // group 3: ok=5, nombre=444
 // group 2: ok=9, nombre=111
 
-var EXPECTED_OK_VALUE = 9;
-var DEFAULT_NOMBRE = 111;
+// march
+// group 3: ok=1, nombre=444
+// group 2: ok=5, nombre=333
+// group 1: ok=9, nombre=222
+
+var EXPECTED_OK_VALUE = 1;
+var DEFAULT_NOMBRE = 444;
 
 var PORT = process.env.PORT || 8080;
 
