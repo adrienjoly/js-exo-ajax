@@ -1,0 +1,89 @@
+group 1 student requests: 8
+group 1 student solutions: 22
+[ 1, 1, 1, 0, 1 ] 4 'rodrigue.coail@eemi.com'
+[ 1, 0, 0, 0, 0 ] 1 'laurent.maximin@eemi.com'
+[ 1, 0, 0, 0, 1 ] 2 'nicolas.gerbault@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'sarah.cohen@eemi.com'
+[ 1, 1, 1, 1, 0 ] 4 'aurele.christ@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'jordan.martins@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'caroline.auclair@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'tess.tilmont@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'christopher.amega@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'adrien.jourdier@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'simon.chotard@eemi.com'
+[ 1, 0, 0, 0, 0 ] 1 'remi.alvarez-franco@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'lucie.albira@eemi.com'
+[ 1, 0, 0, 0, 0 ] 1 'arnaud.juillet@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'nina.pellan@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'jean.barbier@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'savinien.maire@eemi.com'
+[ 1, 0, 0, 0, 1 ] 2 'alicia.djaffar@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'antoine.blot@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'valentin.bernard@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'samy.announ@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'aurelien.bonnaud-leroux@eemi.com'
+group 1 max: [ 1, 1, 1, 1, 1 ]
+group 1 average: [ 0.36363636363636365,
+  0.13636363636363635,
+  0.13636363636363635,
+  0.09090909090909091,
+  0.18181818181818182 ] 0.9090909090909092 
+
+group 2 student requests: 15
+group 2 student solutions: 23
+[ 1, 1, 1, 1, 1 ] 5 'alexandre.evrard@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'arnaud.manaranche@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'hugo.paradiso@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'marine.bourgeois@eemi.com'
+[ 1, 0, 0, 0, 0 ] 1 'celine.meme@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'camille.bournier@eemi.com'
+[ 1, 1, 0, 0, 1 ] 3 'charles.guignard@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'julien.boudeville@eemi.com'
+[ 1, 1, 1, 0, 1 ] 4 'briac.suquet@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'fabien.schneiter@eemi.com'
+[ 1, 1, 1, 0, 1 ] 4 'hadrien.bauville@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'salome.chiche@eemi.com'
+[ 1, 0, 0, 0, 1 ] 2 'timothee.podguszer@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'leon.lapotre@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'kevin.wu@eemi.com'
+[ 1, 0, 0, 0, 1 ] 2 'assila.zitouni@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'norman.villaret@eemi.com'
+[ 1, 1, 1, 1, 0 ] 4 'victor.delafouchardiere@eemi.com'
+[ 1, 0, 0, 0, 1 ] 2 'frank.blumenfeld@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'francois.gorgerin@eemi.com'
+[ 1, 0, 0, 0, 1 ] 2 'guillaume.amortila@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'romane.chaouloff@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'laurene.lodter@eemi.com'
+group 2 max: [ 1, 1, 1, 1, 1 ]
+group 2 average: [ 0.6521739130434783,
+  0.43478260869565216,
+  0.391304347826087,
+  0.30434782608695654,
+  0.5652173913043478 ] 2.3478260869565215 
+
+group 3 student requests: 13
+group 3 student solutions: 17
+[ 1, 1, 1, 1, 1 ] 5 'ruben.desert@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'maxime.pierre-pichot@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'guillaume.hulin@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'louis-leopold.fiessinger@eemi.com'
+[ 1, 1, 1, 1, 0 ] 4 'maxime.vion@eemi.com'
+[ 1, 1, 1, 1, 0 ] 4 'antoine.saint-hilaire@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'romain.rouleau@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'anais.desmero@eemi.com'
+[ 1, 1, 1, 1, 0 ] 4 'aristide.boulch@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'chloe.tubiana@eemi.com'
+[ 1, 0, 0, 0, 1 ] 2 'robin.mesa-marin@eemi.com'
+[ 1, 1, 1, 1, 1 ] 5 'gersende.devilleneuve@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'carla.succar@eemi.com'
+[ 1, 0, 0, 0, 0 ] 1 'josephine.mahieu@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'romain.peyret@eemi.com'
+[ 0, 0, 0, 0, 0 ] 0 'ibrahim.bouhaj@eemi.com'
+[ 1, 1, 0, 1, 1 ] 4 'enzo.ferreira@eemi.com'
+group 3 max: [ 1, 1, 1, 1, 1 ]
+group 3 average: [ 0.7647058823529411,
+  0.6470588235294118,
+  0.5882352941176471,
+  0.6470588235294118,
+  0.5294117647058824 ] 3.176470588235294 
+

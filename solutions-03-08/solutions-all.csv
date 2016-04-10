@@ -1,0 +1,1101 @@
+timestamp,cookie,answer,js,,,,
+MARS CLASSE 3,,,,,,,
+Tue Mar 08 2016 10:25:23 GMT+0000 (UTC),"[""112253427180215337120"",""Ruben DESERT"",""ruben.desert@eemi.com""]",33317908,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ok:1, email:""ruben.desert@eemi.com""}));",,,,
+Tue Mar 08 2016 10:25:25 GMT+0000 (UTC),"[""104686591400476883641"",""Maxime PIERRE-PICHOT"",""maxime.pierre-pichot@eemi.com""]",,,,,,
+Tue Mar 08 2016 10:25:56 GMT+0000 (UTC),"[""106233552530976351779"",""Guillaume HULIN"",""guillaume.hulin@eemi.com""]",2070630066,"
+     var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0))
+  {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email: 'guillaume.hulin@eemi.com' }));",,,,
+Tue Mar 08 2016 10:26:21 GMT+0000 (UTC),"[""100617553123902683497"",""Louis-Léopold FIESSINGER"",""louis-leopold.fiessinger@eemi.com""]",1346368336,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0))
+  {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email: 'louis-leopold.fiessinger@eemi.com' }));
+/* 2070630066 */",,,,
+Tue Mar 08 2016 10:26:46 GMT+0000 (UTC),"[""101784347288786900868"",""Maxime VION"",""maxime.vion@eemi.com""]",,"
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    //var result = JSON.parse(xhr.responseText);
+    alert;
+  }
+};
+xhr.send (JSON.stringify({ok:1, email: ""maxime.vion@eemi.com""}));",,,,
+Tue Mar 08 2016 10:26:52 GMT+0000 (UTC),"[""101784347288786900868"",""Maxime VION"",""maxime.vion@eemi.com""]",,"
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    //var result = JSON.parse(xhr.responseText);
+    alert;
+  }
+};
+xhr.send (JSON.stringify({ok:1, email: ""maxime.vion@eemi.com""}));",,,,
+Tue Mar 08 2016 10:26:56 GMT+0000 (UTC),"[""106905615459400315347"",""Antoine SAINT-HILAIRE"",""antoine.saint-hilaire@eemi.com""]",915761141,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0))
+  {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email: 'antoine.saint-hilaire@eemi.com' }));",,,,
+Tue Mar 08 2016 10:27:33 GMT+0000 (UTC),"[""101819953116639767831"",""Romain ROULEAU"",""romain.rouleau@eemi.com""]",-682843934,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0))
+  {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email: 'romain.rouleau@eemi.com' }));",,,,
+Tue Mar 08 2016 10:27:59 GMT+0000 (UTC),"[""104233237249726545832"",""Anais DESMERO"",""anais.desmero@eemi.com""]",-787812360,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   alert(xhr.responseText);
+ }
+};
+xhr.send(JSON.stringify({ email : 'anais.desmero@eemi.com', ok : '1' }));",,,,
+Tue Mar 08 2016 10:28:12 GMT+0000 (UTC),"[""110381908424218986467"",""Aristide BOULCH"",""aristide.boulch@eemi.com""]",1,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0))
+  {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email: 'aristide.boulch@eemi.com' }));
+",,,,
+Tue Mar 08 2016 10:28:18 GMT+0000 (UTC),"[""110381908424218986467"",""Aristide BOULCH"",""aristide.boulch@eemi.com""]",1,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0))
+  {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email: 'aristide.boulch@eemi.com' }));
+",,,,
+Tue Mar 08 2016 10:28:29 GMT+0000 (UTC),"[""110381908424218986467"",""Aristide BOULCH"",""aristide.boulch@eemi.com""]",2,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function()
+{
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0))
+  {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: 1, email: 'aristide.boulch@eemi.com' }));
+",,,,
+Tue Mar 08 2016 10:29:10 GMT+0000 (UTC),"[""117863570411837800649"",""Chloé TUBIANA"",""chloe.tubiana@eemi.com""]",-953599148,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: '1', email: 'chloe.tubiana@eemi.com' }));",,,,
+Tue Mar 08 2016 10:31:04 GMT+0000 (UTC),"[""112814090841211251108"",""Robin MESA-MARIN"",""robin.mesa-marin@eemi.com""]",444,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+var result = JSON.parse(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok:1 email:robin.mesa-marin@eemi.com }));",,,,
+Tue Mar 08 2016 10:31:04 GMT+0000 (UTC),"[""104686591400476883641"",""Maxime PIERRE-PICHOT"",""maxime.pierre-pichot@eemi.com""]",,,,,,
+Tue Mar 08 2016 10:31:12 GMT+0000 (UTC),"[""104686591400476883641"",""Maxime PIERRE-PICHOT"",""maxime.pierre-pichot@eemi.com""]",,,,,,
+Tue Mar 08 2016 10:32:02 GMT+0000 (UTC),"[""104686591400476883641"",""Maxime PIERRE-PICHOT"",""maxime.pierre-pichot@eemi.com""]",,,,,,
+Tue Mar 08 2016 10:32:09 GMT+0000 (UTC),"[""107425685405909237154"",""Gersende DE VILLENEUVE"",""gersende.devilleneuve@eemi.com""]",-1322838674,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+
+xhr.send(JSON.stringify({ ok:'1',email:'gersende.devilleneuve@eemi.com'}));",,,,
+Tue Mar 08 2016 10:32:09 GMT+0000 (UTC),"[""108011996141201084681"",""Carla SUCCAR"",""carla.succar@eemi.com""]",,"document.getDocumentById(“form”).onsubmit = function(event) { event.preventDefault();
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');
+	};
+
+xhr.send(JSON.stringify({nombre:'ok'}));
+
+xhr.send(JSON.stringify({chaine de caractères:'email'}));
+
+
+",,,,
+Tue Mar 08 2016 10:32:10 GMT+0000 (UTC),"[""102320401513628102472"",""Joséphine MAHIEU"",""josephine.mahieu@eemi.com""]",,"//html
+
+input text -> nom
+
+//POST :
+
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api);
+
+xhr.send('monnom=' +monNom + '&param2=');
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    var result = JSON.parse(xhr.responseText);
+    alert(result.name);
+ document.getElementById('img')setAttribute(""src"", xhr.responseText);
+  }
+};
+xhr.send(null);
+
+ //CONTROLE :
+
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    //var result = JSON.parse(xhr.responseText);
+  }
+};
+xhr.send (JSON.stringify({ok:1, email: ""josephine.mahieu@eemi.com""}));",,,,
+Tue Mar 08 2016 10:32:10 GMT+0000 (UTC),"[""112814090841211251108"",""Robin MESA-MARIN"",""robin.mesa-marin@eemi.com""]",444,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+var result = JSON.parse(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok:1 email:robin.mesa-marin@eemi.com }));",,,,
+Tue Mar 08 2016 10:32:14 GMT+0000 (UTC),"[""100072992268804705214"",""Romain PEYRET"",""romain.peyret@eemi.com""]",400,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send((JSON.stringify({ email: 'romain.peyret@eemi.com'})
+({ok: 1})));",,,,
+Tue Mar 08 2016 10:32:19 GMT+0000 (UTC),"[""107425685405909237154"",""Gersende DE VILLENEUVE"",""gersende.devilleneuve@eemi.com""]",-1322838674,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+
+xhr.send(JSON.stringify({ ok:'1',email:'gersende.devilleneuve@eemi.com'}));",,,,
+Tue Mar 08 2016 10:32:20 GMT+0000 (UTC),"[""106771024311888459107"",""Ibrahim BOUHAJ"",""ibrahim.bouhaj@eemi.com""]",123,"xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok:1,email:monemail@lol.fr }));",,,,
+Tue Mar 08 2016 10:32:20 GMT+0000 (UTC),"[""117276544425730858877"",""Enzo FERREIRA"",""enzo.ferreira@eemi.com""]",-465085075,"var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+                xhr.onreadystatechange = function() {
+                  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            alert(xhr.responseText);
+          }
+};
+xhr.send(JSON.stringify({ ok:9 , email:'enzo.ferreira@eemi.com' }));",,,,ajouté suite à demande par mail (retard)
+MARS CLASSE 2,,,,,,,
+Tue Mar 08 2016 13:21:52 GMT+0000 (UTC),"[""115173112075180731014"",""Alexandre EVRARD"",""alexandre.evrard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.send(JSON.stringify({ ok : 5 , email : ""alexandre.evrard@eemi.com"" }));
+",,,,
+Tue Mar 08 2016 13:22:19 GMT+0000 (UTC),"[""107172046548987188834"",""Arnaud MANARANCHE"",""arnaud.manaranche@eemi.com""]",-1029731412,"var xhr = new XMLHttpRequest();
+var data = { ""ok"" : 5, ""email"" : ""arnaud.manaranche@eemi.com"" }
+xhr.open(""POST"", ""https://js-exo-ajax.herokuapp.com/api"")
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    console.log(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify(data));",,,,
+Tue Mar 08 2016 13:22:23 GMT+0000 (UTC),"[""107172046548987188834"",""Arnaud MANARANCHE"",""arnaud.manaranche@eemi.com""]",-1029731412,"var xhr = new XMLHttpRequest();
+var data = { ""ok"" : 5, ""email"" : ""arnaud.manaranche@eemi.com"" }
+xhr.open(""POST"", ""https://js-exo-ajax.herokuapp.com/api"")
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    console.log(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify(data));",,,,
+Tue Mar 08 2016 13:22:55 GMT+0000 (UTC),"[""115173112075180731014"",""Alexandre EVRARD"",""alexandre.evrard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok : 5 , email : ""alexandre.evrard@eemi.com"" }));
+",,,,
+Tue Mar 08 2016 13:23:11 GMT+0000 (UTC),"[""115173112075180731014"",""Alexandre EVRARD"",""alexandre.evrard@eemi.com""]",151146,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok : 5 , email : ""alexandre.evrard@eemi.com"" }));
+",,,,
+Tue Mar 08 2016 13:23:15 GMT+0000 (UTC),"[""115852772576547459643"",""Hugo PARADISO"",""hugo.paradiso@eemi.com""]",111,,,,,
+Tue Mar 08 2016 13:23:20 GMT+0000 (UTC),"[""106016122078624523322"",""Marine BOURGEOIS"",""marine.bourgeois@eemi.com""]",-594704630,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5,email: ('marine.bourgeois@eemi.com') }));",,,,
+Tue Mar 08 2016 13:23:20 GMT+0000 (UTC),"[""115173112075180731014"",""Alexandre EVRARD"",""alexandre.evrard@eemi.com""]",1511468923,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok : 5 , email : ""alexandre.evrard@eemi.com"" }));
+",,,,
+Tue Mar 08 2016 13:23:34 GMT+0000 (UTC),"[""105851694432543357504"",""Céline MEME"",""celine.meme@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ok:5,email:celine.meme@eemi.com}));
+undefined",,,,
+Tue Mar 08 2016 13:23:41 GMT+0000 (UTC),"[""106016122078624523322"",""Marine BOURGEOIS"",""marine.bourgeois@eemi.com""]",-594704630,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5,email: ('marine.bourgeois@eemi.com') }));",,,,
+Tue Mar 08 2016 13:23:44 GMT+0000 (UTC),"[""107741489064753039193"",""Camille BOURNIER"",""camille.bournier@eemi.com""]",176822266,"<script>
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5, email: ('camille.bournier@eemi.com') }));
+</script>",,,,
+Tue Mar 08 2016 13:24:06 GMT+0000 (UTC),"[""107741489064753039193"",""Camille BOURNIER"",""camille.bournier@eemi.com""]",176822266,"<script>
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5, email: ('camille.bournier@eemi.com') }));
+</script>",,,,
+Tue Mar 08 2016 13:24:11 GMT+0000 (UTC),"[""106260878910256496020"",""Charles GUIGNARD"",""charles.guignard@eemi.com""]",333,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+Tue Mar 08 2016 13:24:17 GMT+0000 (UTC),"[""106260878910256496020"",""Charles GUIGNARD"",""charles.guignard@eemi.com""]",333,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+Tue Mar 08 2016 13:24:36 GMT+0000 (UTC),"[""103874377118893126548"",""Julien BOUDEVILLE"",""julien.boudeville@eemi.com""]",5,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5,email: ('julien.boudeville@eemi.com') }));",,,,
+Tue Mar 08 2016 13:24:46 GMT+0000 (UTC),"[""102147722742332758287"",""Briac SUQUET"",""briac.suquet@eemi.com""]",333,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.send(JSON.stringify({ ok: '5' }));
+xhr.send(JSON.stringify({ email: 'briac.suquet@eemi.com' }));",,,,
+Tue Mar 08 2016 13:24:49 GMT+0000 (UTC),"[""105851694432543357504"",""Céline MEME"",""celine.meme@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+
+xhr.send(JSON.stringify({ok:5,email:celine.meme@eem.com}));
+undefined",,,,
+Tue Mar 08 2016 13:24:52 GMT+0000 (UTC),"[""103874377118893126548"",""Julien BOUDEVILLE"",""julien.boudeville@eemi.com""]",5,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5,email: ('julien.boudeville@eemi.com') }));",,,,
+Tue Mar 08 2016 13:26:18 GMT+0000 (UTC),"[""100322773186257825155"",""Fabien SCHNEITER"",""fabien.schneiter@eemi.com""]",333,"var xhr = new XMLHttpRequest();
+var data = { ""ok"" : 5, ""email"" : ""fabien.schneiter@eemi.com"" }
+xhr.open(""POST"", ""https://js-exo-ajax.herokuapp.com/api"")
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    console.log(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify(data));",,,,
+Tue Mar 08 2016 13:26:28 GMT+0000 (UTC),"[""105686855929419458563"",""Hadrien BAUVILLE"",""hadrien.bauville@eemi.com""]",333,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.send(JSON.stringify({ ok: '5' }));
+xhr.send(JSON.stringify({ email: 'hadrien.bauville@eemi.com' }));",,,,
+Tue Mar 08 2016 13:27:06 GMT+0000 (UTC),"[""103874377118893126548"",""Julien BOUDEVILLE"",""julien.boudeville@eemi.com""]",2035183049,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5,email: ('julien.boudeville@eemi.com') }));",,,,
+Tue Mar 08 2016 13:27:11 GMT+0000 (UTC),"[""110014628040879105032"",""Salome CHICHE"",""salome.chiche@eemi.com""]",111,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+Tue Mar 08 2016 13:27:15 GMT+0000 (UTC),"[""105851694432543357504"",""Céline MEME"",""celine.meme@eemi.com""]",1511468923,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+
+xhr.send(JSON.stringify({ok:5,email:celine.meme@eem.com}));
+undefined",,,,
+Tue Mar 08 2016 13:27:16 GMT+0000 (UTC),"[""108194736825106247098"",""Timothée PODGUSZER"",""timothee.podguszer@eemi.com""]",333,,,,,
+Tue Mar 08 2016 13:27:28 GMT+0000 (UTC),"[""103659140839603503174"",""Léon LAPOTRE"",""leon.lapotre@eemi.com""]",,,,,,
+Tue Mar 08 2016 13:27:33 GMT+0000 (UTC),"[""116179280031821926883"",""Kévin WU"",""kevin.wu@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');
+
+
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+Tue Mar 08 2016 13:27:42 GMT+0000 (UTC),"[""103874377118893126548"",""Julien BOUDEVILLE"",""julien.boudeville@eemi.com""]",2035183049,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+alert(xhr.responseText);
+}
+};
+xhr.send(JSON.stringify({ ok: 5,email: ('julien.boudeville@eemi.com') }));",,,,
+Tue Mar 08 2016 13:27:57 GMT+0000 (UTC),"[""107573928737735339074"",""Assila ZITOUNI"",""assila.zitouni@eemi.com""]",333,"function fetchCustomer() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', ' https://js-exo-ajax.herokuapp.com/api');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 0) {
+        }  else if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+          var obj = JSON.parse(xhr.responseText);
+          alert (obj['ok']['email']);
+        }
+      };
+xhr.send('adresse mail');
+    }",,,,
+Tue Mar 08 2016 13:28:02 GMT+0000 (UTC),"[""100212266235788964177"",""Norman VILLARET"",""norman.villaret@eemi.com""]",1,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+ok = 5;
+email = norman.villaret@eemi.com;
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 13:28:12 GMT+0000 (UTC),"[""108194736825106247098"",""Timothée PODGUSZER"",""timothee.podguszer@eemi.com""]",333,,,,,
+Tue Mar 08 2016 13:28:13 GMT+0000 (UTC),"[""108194736825106247098"",""Timothée PODGUSZER"",""timothee.podguszer@eemi.com""]",333,,,,,
+Tue Mar 08 2016 13:28:16 GMT+0000 (UTC),"[""115196211086729181863"",""Victor DE LA FOUCHARDIERE"",""victor.delafouchardiere@eemi.com""]",,"var xhr = new XMLHttpRequest();
+var data = { ""ok"" : 5, ""email"" : ""victor.delafouchardiere@eemi.com"" }
+xhr.open(""POST"", ""https://js-exo-ajax.herokuapp.com/api"")
+xhr.onreadystatechange = function() {
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    console.log(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify(data));",,,,
+Tue Mar 08 2016 13:28:25 GMT+0000 (UTC),"[""116028098557238327291"",""Frank BLUMENFELD"",""frank.blumenfeld@eemi.com""]",333,"function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+      document.getElementById(""email"").innerHTML =
+      }
+      }
+      xhttp.responseText;xhttp.open(""POST"", ""https://js-exo-ajax.herokuapp.com/api"", true);
+xhttp.send(""ok=5&email=frank.blumenfeld@eemi.com"")",,,,
+Tue Mar 08 2016 13:28:29 GMT+0000 (UTC),"[""106576109926142604675"",""François GORGERIN"",""francois.gorgerin@eemi.com""]",-1920748895,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+       if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+	   alert(xhr.responseText);}
+	   };
+xhr.send(JSON.stringify({ ok : 5 , email : ""francois.gorgerin@eemi.com"" }));",,,,
+Tue Mar 08 2016 13:28:33 GMT+0000 (UTC),"[""106576109926142604675"",""François GORGERIN"",""francois.gorgerin@eemi.com""]",-1920748895,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+       if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+	   alert(xhr.responseText);}
+	   };
+xhr.send(JSON.stringify({ ok : 5 , email : ""francois.gorgerin@eemi.com"" }));",,,,
+Tue Mar 08 2016 13:28:37 GMT+0000 (UTC),"[""105851694432543357504"",""Céline MEME"",""celine.meme@eemi.com""]",1511468923,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+
+xhr.send(JSON.stringify({ok:5,email:celine.meme@eem.com}));
+undefined",,,,
+Tue Mar 08 2016 13:28:39 GMT+0000 (UTC),"[""110014628040879105032"",""Salome CHICHE"",""salome.chiche@eemi.com""]",111,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+Tue Mar 08 2016 13:28:40 GMT+0000 (UTC),"[""106576109926142604675"",""François GORGERIN"",""francois.gorgerin@eemi.com""]",-1920748895,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+       if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+	   alert(xhr.responseText);}
+	   };
+xhr.send(JSON.stringify({ ok : 5 , email : ""francois.gorgerin@eemi.com"" }));",,,,
+Tue Mar 08 2016 13:28:45 GMT+0000 (UTC),"[""105851694432543357504"",""Céline MEME"",""celine.meme@eemi.com""]",1511468923,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+
+xhr.send(JSON.stringify({ok:5,email:celine.meme@eem.com}));
+undefined",,,,
+Tue Mar 08 2016 13:28:51 GMT+0000 (UTC),"[""115852772576547459643"",""Hugo PARADISO"",""hugo.paradiso@eemi.com""]",111,,,,,
+Tue Mar 08 2016 13:28:53 GMT+0000 (UTC),"[""110094529371235135290"",""guillaume AMORTILA"",""guillaume.amortila@eemi.com""]",333,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(JSON.stringify({ ok: '5' , email: ‘guillaume.amortila@eemi.com’}));",,,,
+Tue Mar 08 2016 13:29:04 GMT+0000 (UTC),"[""110625963267758945150"",""Romane CHAOULOFF"",""romane.chaouloff@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('email');",,,,
+Tue Mar 08 2016 13:29:04 GMT+0000 (UTC),"[""110625963267758945150"",""Romane CHAOULOFF"",""romane.chaouloff@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('email');",,,,
+Tue Mar 08 2016 13:29:15 GMT+0000 (UTC),"[""102147722742332758287"",""Briac SUQUET"",""briac.suquet@eemi.com""]",333,"function fetchCustomer () {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.send(JSON.stringify({ ok: '5' }));
+xhr.send(JSON.stringify({ email: 'briac.suquet@eemi.com' }));",,,,
+Tue Mar 08 2016 13:29:15 GMT+0000 (UTC),"[""114347809722429019984"",""Laurène LODTER"",""laurene.lodter@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api ');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 5 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ message: 'bonjour!' }));",,,,
+MARS CLASSE 1,,,,,,,
+Tue Mar 08 2016 15:43:12 GMT+0000 (UTC),"[""112837382688102224023"",""Rodrigue COAIL"",""rodrigue.coail@eemi.com""]",91582901,"  var x = document.getElementById('email');
+	  var y = document.getElementById('ok');
+      document.getElementById('form').onsubmit = function(event) {
+              var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api');
+        xhr.onreadystatechange = function() {
+          console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+
+            if (xhr.status == 200 || xhr.status == 0) {
+              x.value = '';
+              x.focus();
+            } else {
+              alert('error ' + xhr.status);
+            }
+          }
+        };
+        xhr.send(JSON.stringify({ email: x.value } + { ok: y.value}));
+      };",,,,
+Tue Mar 08 2016 15:43:30 GMT+0000 (UTC),"[""103631253150006969014"",""Laurent MAXIMIN"",""laurent.maximin@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+ JSON.parse(xhr.responseText);
+}
+else {
+alert('error ' + xhr.status);
+}
+};
+xhr.send(JSON.stringify({(email: 'laurent.maximin@eemi.com')}));
+};",,,,
+Tue Mar 08 2016 15:43:55 GMT+0000 (UTC),"[""103631253150006969014"",""Laurent MAXIMIN"",""laurent.maximin@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+ JSON.parse(xhr.responseText);
+}
+else {
+alert('error ' + xhr.status);
+}
+};
+xhr.send(JSON.stringify({(email: 'laurent.maximin@eemi.com')}), ok: 9);
+};",,,,
+Tue Mar 08 2016 15:44:03 GMT+0000 (UTC),"[""104803018614623792428"",""Nicolas GERBAULT"",""nicolas.gerbault@eemi.com""]",222,,,,,
+Tue Mar 08 2016 15:44:09 GMT+0000 (UTC),"[""112837382688102224023"",""Rodrigue COAIL"",""rodrigue.coail@eemi.com""]",91582901,"var x = document.getElementById('email');
+	  var y = document.getElementById('ok');
+      document.getElementById('form').onsubmit = function(event) {
+              var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api');
+        xhr.onreadystatechange = function() {
+          console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+
+            if (xhr.status == 200 || xhr.status == 0) {
+              x.value = '';
+              x.focus();
+            } else {
+              alert('error ' + xhr.status);
+            }
+          }
+        };
+        xhr.send(JSON.stringify({ email: x.value }));
+        xhr.send(JSON.stringify({ ok: y.value}));
+      };",,,,
+Tue Mar 08 2016 15:44:48 GMT+0000 (UTC),"[""105264193742863490620"",""Sarah COHEN"",""sarah.cohen@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 15:44:48 GMT+0000 (UTC),"[""105264193742863490620"",""Sarah COHEN"",""sarah.cohen@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 15:44:48 GMT+0000 (UTC),"[""105264193742863490620"",""Sarah COHEN"",""sarah.cohen@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 15:44:59 GMT+0000 (UTC),"[""109254081457830462271"",""Aurele CHRIST"",""aurele.christ@eemi.com""]",9,"var xhr = new XMLHttpRequest();
+
+xhr.open('post', https://js-exo-ajax.herokuapp.com/api');
+
+xhr.onreadystatechange = function() {
+
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+
+   var result = JSON.parse(xhr.responseText);
+
+   alert(""ALERT!!!"");
+
+ }
+}
+
+xhr.send( JSON.stringify({“ok”: 9 ,“email”: 'aurele.christ@eemi.com'}))",,,,
+Tue Mar 08 2016 15:45:19 GMT+0000 (UTC),"[""102560048735619978819"",""Jordan MARTINS"",""jordan.martins@eemi.com""]",1,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 9 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ message: 'ok' }));",,,,
+Tue Mar 08 2016 15:45:20 GMT+0000 (UTC),"[""111413917136628350156"",""Caroline AUCLAIR"",""caroline.auclair@eemi.com""]",,"var x = document.getElementById('email');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = 'caroline.auclair@eemi.com';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+};
+xhr.send(JSON.stringify({ ok: '9' }));
+xhr.send(JSON.stringify({ email: x.value }));
+};
+
+
+",,,,
+Tue Mar 08 2016 15:45:20 GMT+0000 (UTC),"[""111457311246491113843"",""Tess TILMONT"",""tess.tilmont@eemi.com""]",-580122195,"        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            alert (xhr.responseText);
+          }
+        };
+        xhr.send(JSON.stringify({ ""ok"": 9 , ""email"": tess.tilmont@eemi.com}));
+    ",,,,
+Tue Mar 08 2016 15:45:24 GMT+0000 (UTC),"[""108905198213282127834"",""Christopher AMEGA"",""christopher.amega@eemi.com""]",9,"var x = document.getElementById('email');
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/api');
+x.value= """"
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   alert(xhr.responseText);
+ }
+};
+xhr.send(JSON.stringify({9 , email: x.value }));
+
+",,,,
+Tue Mar 08 2016 15:45:24 GMT+0000 (UTC),"[""105264193742863490620"",""Sarah COHEN"",""sarah.cohen@eemi.com""]",1,"var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://jsonplaceholder.typicode.com/users/1');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send(null);",,,,
+Tue Mar 08 2016 15:45:28 GMT+0000 (UTC),"[""112837382688102224023"",""Rodrigue COAIL"",""rodrigue.coail@eemi.com""]",91582901,"var x = document.getElementById('email');
+	  var y = document.getElementById('ok');
+      document.getElementById('form').onsubmit = function(event) {
+              var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api');
+        xhr.onreadystatechange = function() {
+          console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+
+            if (xhr.status == 200 || xhr.status == 0) {
+              x.value = '';
+              x.focus();
+            } else {
+              alert('error ' + xhr.status);
+            }
+          }
+        };
+        xhr.send(JSON.stringify({ email}));
+        xhr.send(JSON.stringify({ ok}));
+      };",,,,
+Tue Mar 08 2016 15:45:29 GMT+0000 (UTC),"[""116372307368767833451"",""Adrien JOURDIER"",""adrien.jourdier@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', ' https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ ok: '9', email: 'adrien.jourdier@eemi.com'}));",,,,
+Tue Mar 08 2016 15:45:30 GMT+0000 (UTC),"[""111457311246491113843"",""Tess TILMONT"",""tess.tilmont@eemi.com""]",-580122195,"        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            alert (xhr.responseText);
+          }
+        };
+        xhr.send(JSON.stringify({ ""ok"": 9 , ""email"": tess.tilmont@eemi.com}));
+    ",,,,
+Tue Mar 08 2016 15:45:31 GMT+0000 (UTC),"[""102560048735619978819"",""Jordan MARTINS"",""jordan.martins@eemi.com""]",2,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 9 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ message: 'ok' }));",,,,
+Tue Mar 08 2016 15:45:32 GMT+0000 (UTC),"[""114981914867023607521"",""Simon CHOTARD"",""simon.chotard@eemi.com""]",,"var x = document.getElementById('simon.chotard@eemi.com');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST','https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = '';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+};
+xhr.send(JSON.stringify({ email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:45:36 GMT+0000 (UTC),"[""107661820303365152078"",""Remi ALVAREZ-FRANCO"",""remi.alvarez-franco@eemi.com""]",,,,,,
+Tue Mar 08 2016 15:45:39 GMT+0000 (UTC),"[""101607002944537809899"",""Lucie ALBIRA"",""lucie.albira@eemi.com""]",xhr.send(JSON.stringify({ message: 'ok' }));,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 15:45:40 GMT+0000 (UTC),"[""103631253150006969014"",""Laurent MAXIMIN"",""laurent.maximin@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+ JSON.parse(xhr.responseText);
+}
+else {
+alert('error ' + xhr.status);
+}
+};
+xhr.send(JSON.stringify({(email: 'laurent.maximin@eemi.com')}), ok: 9);
+};",,,,
+Tue Mar 08 2016 15:45:46 GMT+0000 (UTC),"[""113490061445927907956"",""Arnaud JUILLET"",""arnaud.juillet@eemi.com""]",,"var x = document.getElementById('email');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', ' https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+{
+else {
+alert('error ' + xhr.status);
+}
+}
+};
+xhr.send(JSON.stringify({ email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:45:47 GMT+0000 (UTC),"[""101607002944537809899"",""Lucie ALBIRA"",""lucie.albira@eemi.com""]",xhr.send(JSON.stringify({ message: 'ok' }));,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 15:45:50 GMT+0000 (UTC),"[""114981914867023607521"",""Simon CHOTARD"",""simon.chotard@eemi.com""]",,"var x = document.getElementById('simon.chotard@eemi.com');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST','https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = '';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+};
+xhr.send(JSON.stringify({ email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:45:52 GMT+0000 (UTC),"[""100833687235566341431"",""Nina PELLAN"",""nina.pellan@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   alert(xhr.responseText);
+ }
+};
+hr.send( JSON.stringify){
+
+“ok”: 1
+
+“Email”:”nina.pellan@eemi.com”",,,,
+Tue Mar 08 2016 15:45:55 GMT+0000 (UTC),"[""102560048735619978819"",""Jordan MARTINS"",""jordan.martins@eemi.com""]",2,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ message: 'ok' }));",,,,
+Tue Mar 08 2016 15:45:55 GMT+0000 (UTC),"[""100839646955107672412"",""Jean BARBIER"",""jean.barbier@eemi.com""]",9,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+var x =document.getElementById(“jean@mail.com”)
+
+ var.contenue= Json",,,,
+Tue Mar 08 2016 15:45:58 GMT+0000 (UTC),"[""108003350025924655784"",""Savinien MAIRE"",""savinien.maire@eemi.com""]",,"var x = document.getElementById('email');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = '';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+};
+xhr.send(JSON.stringify({ email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:46:08 GMT+0000 (UTC),"[""111457311246491113843"",""Tess TILMONT"",""tess.tilmont@eemi.com""]",-580122195,"        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            alert (xhr.responseText);
+          }
+        };
+        xhr.send(JSON.stringify({ ok: ""9"" , email: ""tess.tilmont@eemi.com""}));
+    ",,,,
+Tue Mar 08 2016 15:46:09 GMT+0000 (UTC),"[""106518625043392065922"",""Alicia DJAFFAR"",""alicia.djaffar@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   var result = JSON.parse(xhr.responseText);
+   alert(ALERT!!!);
+ }
+
+xhr.send( JSON.stringify){
+“ok”: 9 ,
+“Email”:'alicia.djaffar@eemi.com'
+};",,,,
+Tue Mar 08 2016 15:46:14 GMT+0000 (UTC),"[""100839646955107672412"",""Jean BARBIER"",""jean.barbier@eemi.com""]",9,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+var x =document.getElementById(“jean@mail.com”)
+
+ var.contenue= Json",,,,
+Tue Mar 08 2016 15:46:14 GMT+0000 (UTC),"[""111457311246491113843"",""Tess TILMONT"",""tess.tilmont@eemi.com""]",-580122195,"        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            alert (xhr.responseText);
+          }
+        };
+        xhr.send(JSON.stringify({ ok: ""9"" , email: ""tess.tilmont@eemi.com""}));
+    ",,,,
+Tue Mar 08 2016 15:46:17 GMT+0000 (UTC),"[""108003350025924655784"",""Savinien MAIRE"",""savinien.maire@eemi.com""]",,"var x = document.getElementById('email');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = '';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+xhr.send(JSON.stringify({ email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:46:18 GMT+0000 (UTC),"[""111457311246491113843"",""Tess TILMONT"",""tess.tilmont@eemi.com""]",-580122195,"        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            alert (xhr.responseText);
+          }
+        };
+        xhr.send(JSON.stringify({ ok: ""9"" , email: ""tess.tilmont@eemi.com""}));
+    ",,,,
+Tue Mar 08 2016 15:46:30 GMT+0000 (UTC),"[""102560048735619978819"",""Jordan MARTINS"",""jordan.martins@eemi.com""]",2,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 9 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({ message: 'ok' }));",,,,
+Tue Mar 08 2016 15:46:32 GMT+0000 (UTC),"[""108003350025924655784"",""Savinien MAIRE"",""savinien.maire@eemi.com""]",,"var x = document.getElementById('email');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = '';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+xhr.send(JSON.stringify({ ok: 0, email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:46:38 GMT+0000 (UTC),"[""112981518204327775681"",""Antoine BLOT"",""antoine.blot@eemi.com""]",,"var x=document.getElementById(""mail"");
+document.getElementById(""form"").onsubmit = function(event {
+var hxr =n",,,,
+Tue Mar 08 2016 15:46:41 GMT+0000 (UTC),"[""106518625043392065922"",""Alicia DJAFFAR"",""alicia.djaffar@eemi.com""]",222,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   var result = JSON.parse(xhr.responseText);
+   alert(ALERT!!!);
+ }
+
+xhr.send( JSON.stringify){
+“ok”: 9 ,
+“Email”:'alicia.djaffar@eemi.com'
+};",,,,
+Tue Mar 08 2016 15:46:47 GMT+0000 (UTC),"[""103037102019133748890"",""Valentin BERNARD"",""valentin.bernard@eemi.com""]",,"xhr.send(JSON.stringify({ message: '9!' }));
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 15:46:47 GMT+0000 (UTC),"[""106518625043392065922"",""Alicia DJAFFAR"",""alicia.djaffar@eemi.com""]",222,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   var result = JSON.parse(xhr.responseText);
+   alert(ALERT!!!);
+ }
+
+xhr.send( JSON.stringify){
+“ok”: 9 ,
+“Email”:'alicia.djaffar@eemi.com'
+};",,,,
+Tue Mar 08 2016 15:46:48 GMT+0000 (UTC),"[""115861581274490603829"",""Samy ANNOUN"",""samy.announ@eemi.com""]",,"var textejson = '{""ok"" : 9, ""url"":""https://js-exo-ajax.herokuapp.com/api""}'
+var objet = mail('(+samy.announ@eemi.com+)');
+console.log(objet)
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+Envoi d'un objet Javascript (JSON):
+xhr.send(JSON.stringify({ mail: 'samy.announ@eemi.com' }));
+
+",,,,
+Tue Mar 08 2016 15:46:50 GMT+0000 (UTC),"[""111796068059410650427"",""Aurélien BONNAUD - LE ROUX"",""aurelien.bonnaud-leroux@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('ok');",,,,
+Tue Mar 08 2016 15:47:04 GMT+0000 (UTC),"[""103037102019133748890"",""Valentin BERNARD"",""valentin.bernard@eemi.com""]",,"xhr.send(JSON.stringify({ message: '9!' }));
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+    alert(xhr.responseText);
+  }
+};
+xhr.send('données à envoyer');",,,,
+Tue Mar 08 2016 15:47:26 GMT+0000 (UTC),"[""108003350025924655784"",""Savinien MAIRE"",""savinien.maire@eemi.com""]",,"var x = document.getElementById('email');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = '';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+};
+xhr.send(JSON.stringify({ email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:47:28 GMT+0000 (UTC),"[""115861581274490603829"",""Samy ANNOUN"",""samy.announ@eemi.com""]",,"var textejson = '{""ok"" : 9, ""url"":""https://js-exo-ajax.herokuapp.com/api""}'
+var objet = mail('(+samy.announ@eemi.com+)');
+console.log(objet)
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://httpbin.org/post');
+Envoi d'un objet Javascript (JSON):
+xhr.send(JSON.stringify({ mail: 'samy.announ@eemi.com' }));
+
+",,,,
+Tue Mar 08 2016 15:47:56 GMT+0000 (UTC),"[""108003350025924655784"",""Savinien MAIRE"",""savinien.maire@eemi.com""]",,"var x = document.getElementById('email');
+document.getElementById('form').onsubmit = function(event) {
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+console.log('onreadystatechange', xhr.readyState, xhr.status, xhr.responseText);
+if (xhr.status == 200 || xhr.status == 0) {
+x.value = '';
+x.focus();
+} else {
+alert('error ' + xhr.status);
+}
+}
+};
+xhr.send(JSON.stringify({ ok: 9, email: x.value }));
+};",,,,
+Tue Mar 08 2016 15:49:24 GMT+0000 (UTC),"[""106518625043392065922"",""Alicia DJAFFAR"",""alicia.djaffar@eemi.com""]",222,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+ if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+   var result = JSON.parse(xhr.responseText);
+   alert(ALERT!!!);
+ }
+
+xhr.send( JSON.stringify){
+“ok”: 9 ,
+“Email”:'alicia.djaffar@eemi.com'
+};",,,,
+Tue Mar 08 2016 15:55:24 GMT+0000 (UTC),"[""103037102019133748890"",""Valentin BERNARD"",""valentin.bernard@eemi.com""]",,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+var result = JSON.pars(xhr.responseText);
+    alert(""ALERT!!!3);
+  }
+};
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({""ok"": 9 ,""email"":valentinbernard1@hotmail.fr' }));",,,,
+Tue Mar 08 2016 15:55:33 GMT+0000 (UTC),"[""103037102019133748890"",""Valentin BERNARD"",""valentin.bernard@eemi.com""]",9,"var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://js-exo-ajax.herokuapp.com/api');
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+var result = JSON.pars(xhr.responseText);
+    alert(""ALERT!!!3);
+  }
+};
+xhr.send('données à envoyer');
+xhr.send(JSON.stringify({""ok"": 9 ,""email"":valentinbernard1@hotmail.fr' }));",,,,

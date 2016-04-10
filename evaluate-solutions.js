@@ -137,10 +137,17 @@ function displayStudentsWithRequest(path, group, scoreStudent) {
   });
 }
 
+/*
 // february
 var path = './solutions-02-15/';
 displayStudentsWithRequest(path, 1, makeStudentEvaluator(1, 777)); // => 8 requests / 20 solutions => avg: 0.85 => 0.95
 displayStudentsWithRequest(path, 2, makeStudentEvaluator(5, 444)); // => 14 requests / 20 solutions => avg: 0.75 => 0.95
 displayStudentsWithRequest(path, 3, makeStudentEvaluator(9, 111)); // => 15 students / 18 solutions => avg: 0.94 => 1.27
+*/
+
+var path = './solutions-03-08/';
+displayStudentsWithRequest(path, 1, makeStudentEvaluator(9, 222)); // =>
+displayStudentsWithRequest(path, 2, makeStudentEvaluator(5, 333)); // =>
+displayStudentsWithRequest(path, 3, makeStudentEvaluator(1, 444)); // =>
 
 // WARNING: per-group student evaluators don't change the marks! => check ok and answer values
