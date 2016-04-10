@@ -1,3 +1,7 @@
+// this scripts evaluates students' marks for each group (based on a group-specific parameters)
+// from the 2 google spreadsheets: requests and solutions.
+// and on the 5 criteria specified in scoreStudent() + group-based stats
+
 var basicCSV = require('basic-csv');
 var csvOptions = { dropHeader: true };
 
@@ -40,6 +44,7 @@ function parseSolution(row) {
   };
 }
 
+// returns a function that gives an array of passing tests based on a student's last solution and request
 function makeStudentEvaluator(expectedOkValue, defaultAnswer) {
   return function scoreStudent(sol, req) {
     var hasReq = !!req;
@@ -66,14 +71,14 @@ function indexRequests(filename, cb) {
   basicCSV.readCSV(filename, csvOptions, function(err, rows) {
     if (err) return cb(err);
     cb(null, indexLastByEmail(rows.map(parseRequest)));
-  });  
+  });
 }
 
 function indexSolutions(filename, cb) {
   basicCSV.readCSV(filename, csvOptions, function(err, rows) {
     if (err) return cb(err);
     cb(null, indexLastByEmail(rows.map(parseSolution)));
-  });  
+  });
 }
 
 function toBinary(v) {
@@ -109,9 +114,8 @@ function GroupEvaluator(initialSumArray) {
   }
 }
 
-function displayStudentsWithRequest(group, scoreStudent) {
+function displayStudentsWithRequest(path, group, scoreStudent) {
   var groupEval = GroupEvaluator([0,0,0,0,0]);
-  var path = './solutions/';
   indexRequests(path + 'requests-group' + group + '.csv', function(err, studentReq) {
     if (err) throw err;
     indexSolutions(path + 'solutions-group' + group + '.csv', function(err, studentSol) {
@@ -121,7 +125,7 @@ function displayStudentsWithRequest(group, scoreStudent) {
       for (var email in studentSol) {
         var points = scoreStudent(studentSol[email], studentReq[email]).map(toBinary);
         groupEval.feedStudentPoints(points);
-        //console.log(points, points.reduce(sum), email);
+        console.log(points, points.reduce(sum), email);
         //console.log(email, studentSol[email].js);
         //console.log((studentReq[email] || {}).okValue, email);
         //console.log(studentSol[email].answer, email);
@@ -133,8 +137,10 @@ function displayStudentsWithRequest(group, scoreStudent) {
   });
 }
 
-displayStudentsWithRequest(1, makeStudentEvaluator(1, 777)); // => 8 requests / 20 solutions => avg: 0.85 => 0.95
-displayStudentsWithRequest(2, makeStudentEvaluator(5, 444)); // => 14 requests / 20 solutions => avg: 0.75 => 0.95
-displayStudentsWithRequest(3, makeStudentEvaluator(9, 111)); // => 15 students / 18 solutions => avg: 0.94 => 1.27
+// february
+var path = './solutions-02-15/';
+displayStudentsWithRequest(path, 1, makeStudentEvaluator(1, 777)); // => 8 requests / 20 solutions => avg: 0.85 => 0.95
+displayStudentsWithRequest(path, 2, makeStudentEvaluator(5, 444)); // => 14 requests / 20 solutions => avg: 0.75 => 0.95
+displayStudentsWithRequest(path, 3, makeStudentEvaluator(9, 111)); // => 15 students / 18 solutions => avg: 0.94 => 1.27
 
 // WARNING: per-group student evaluators don't change the marks! => check ok and answer values
